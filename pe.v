@@ -20,6 +20,50 @@ module pe
     output  reg                     out_valid
 );
 
-// Insert your RTL here
+reg [D_W_ACC-1:0] sum;
+reg [D_W_ACC-1:0] internal_data;
+reg flag;
+
+always @(posedge clk) begin
+    if(rst) begin
+        internal_data <= {D_W_ACC{1'b0}};
+        out_data <= {D_W_ACC{1'b0}};
+        sum <= {D_W_ACC{1'b0}};
+        out_a <= {D_W{1'b0}};
+        out_b <= {D_W{1'b0}};
+        out_valid <= 1'b0;
+        flag <= 1'b0;
+    end
+    else if (init) begin
+        sum <= in_a * in_b;
+        out_data <= sum;
+        out_a <= in_a;
+        out_b <= in_b;
+        out_valid <= 1'b1;
+    end
+    else if (flag) begin
+        sum <= sum + in_a * in_b;
+        out_data <= internal_data;
+        out_valid <= 1'b1;
+        out_a <= in_a;
+        out_b <= in_b;
+    end
+    else begin
+        sum <= sum + in_a * in_b;
+        out_a <= in_a;
+        out_b <= in_b;
+        out_valid <= 1'b0;
+    end
+
+    if(in_valid) begin
+        internal_data <= in_data;
+        flag <= 1'b1;
+    end
+    else begin
+        flag <= 1'b0;
+    end
+
+end
+
  
 endmodule
