@@ -1,0 +1,697 @@
+make[1]: Entering directory '/drives/c/Users/jlmrocze/Documents/ece327/1/jlmrocze-lab4'
+scp lab4-board.py xilinx@192.168.2.99:~/
+cp overlay/tutorial_4_4_4.bit overlay/tutorial.bit
+cp overlay/tutorial_4_4_4.hwh overlay/tutorial.hwh
+scp overlay/tutorial.* xilinx@192.168.2.99:~/
+ssh -tt xilinx@192.168.2.99 "echo xilinx | sudo -S python3.6 lab4-board.py 4 4 4"
+[sudo] password for xilinx: {'mm_eval/axi_dma': {'addr_range': 65536,
+                     'device': <pynq.pl_server.device.XlnkDevice object at 0xb5717e90>,
+                     'driver': <class 'pynq.lib.dma.DMA'>,
+                     'fullpath': 'mm_eval/axi_dma',
+                     'gpio': {},
+                     'interrupts': {},
+                     'mem_id': 'S_AXI_LITE',
+                     'parameters': {'C_BASEADDR': '0x40400000',
+                                    'C_DLYTMR_RESOLUTION': '125',
+                                    'C_ENABLE_MULTI_CHANNEL': '0',
+                                    'C_FAMILY': 'zynq',
+                                    'C_HIGHADDR': '0x4040FFFF',
+                                    'C_INCLUDE_MM2S': '1',
+                                    'C_INCLUDE_MM2S_DRE': '0',
+                                    'C_INCLUDE_MM2S_SF': '1',
+                                    'C_INCLUDE_S2MM': '1',
+                                    'C_INCLUDE_S2MM_DRE': '0',
+                                    'C_INCLUDE_S2MM_SF': '1',
+                                    'C_INCLUDE_SG': '0',
+                                    'C_INCREASE_THROUGHPUT': '0',
+                                    'C_MICRO_DMA': '0',
+                                    'C_MM2S_BURST_SIZE': '16',
+                                    'C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH': '32',
+                                    'C_M_AXIS_MM2S_TDATA_WIDTH': '32',
+                                    'C_M_AXI_MM2S_ADDR_WIDTH': '32',
+                                    'C_M_AXI_MM2S_DATA_WIDTH': '32',
+                                    'C_M_AXI_S2MM_ADDR_WIDTH': '32',
+                                    'C_M_AXI_S2MM_DATA_WIDTH': '32',
+                                    'C_M_AXI_SG_ADDR_WIDTH': '32',
+                                    'C_M_AXI_SG_DATA_WIDTH': '32',
+                                    'C_NUM_MM2S_CHANNELS': '1',
+                                    'C_NUM_S2MM_CHANNELS': '1',
+                                    'C_PRMRY_IS_ACLK_ASYNC': '0',
+                                    'C_S2MM_BURST_SIZE': '16',
+                                    'C_SG_INCLUDE_STSCNTRL_STRM': '0',
+                                    'C_SG_LENGTH_WIDTH': '23',
+                                    'C_SG_USE_STSAPP_LENGTH': '0',
+                                    'C_S_AXIS_S2MM_STS_TDATA_WIDTH': '32',
+                                    'C_S_AXIS_S2MM_TDATA_WIDTH': '32',
+                                    'C_S_AXI_LITE_ADDR_WIDTH': '10',
+                                    'C_S_AXI_LITE_DATA_WIDTH': '32',
+                                    'Component_Name': 'tutorial_axi_dma_0',
+                                    'EDK_IPTYPE': 'PERIPHERAL',
+                                    'c_addr_width': '32',
+                                    'c_dlytmr_resolution': '125',
+                                    'c_enable_multi_channel': '0',
+                                    'c_include_mm2s': '1',
+                                    'c_include_mm2s_dre': '0',
+                                    'c_include_mm2s_sf': '1',
+                                    'c_include_s2mm': '1',
+                                    'c_include_s2mm_dre': '0',
+                                    'c_include_s2mm_sf': '1',
+                                    'c_include_sg': '0',
+                                    'c_increase_throughput': '0',
+                                    'c_m_axi_mm2s_data_width': '32',
+                                    'c_m_axi_s2mm_data_width': '32',
+                                    'c_m_axis_mm2s_tdata_width': '32',
+                                    'c_micro_dma': '0',
+                                    'c_mm2s_burst_size': '16',
+                                    'c_num_mm2s_channels': '1',
+                                    'c_num_s2mm_channels': '1',
+                                    'c_prmry_is_aclk_async': '0',
+                                    'c_s2mm_burst_size': '16',
+                                    'c_s_axis_s2mm_tdata_width': '32',
+                                    'c_sg_include_stscntrl_strm': '0',
+                                    'c_sg_length_width': '23',
+                                    'c_sg_use_stsapp_length': '0',
+                                    'c_single_interface': '0'},
+                     'phys_addr': 1077936128,
+                     'registers': {'MM2S_CURDESC': {'access': 'read-write',
+                                                    'address_offset': 8,
+                                                    'description': 'MM2S DMA '
+                                                                   'Current '
+                                                                   'Descriptor '
+                                                                   'Pointer '
+                                                                   'Register',
+                                                    'fields': {'Current_Descriptor_Pointer': {'access': 'read-write',
+                                                                                              'bit_offset': 6,
+                                                                                              'bit_width': 26,
+                                                                                              'description': 'MM2S '
+                                                                                                             'DMA '
+                                                                                                             'Current '
+                                                                                                             'Descriptor '
+                                                                                                             'Pointer '
+                                                                                                             'Register'}},
+                                                    'size': 32},
+                                   'MM2S_CURDESC_MSB': {'access': 'read-write',
+                                                        'address_offset': 12,
+                                                        'description': 'MM2S '
+                                                                       'DMA '
+                                                                       'Current '
+                                                                       'Descriptor '
+                                                                       'Pointer '
+                                                                       'Register',
+                                                        'fields': {'Current_Descriptor_Pointer': {'access': 'read-write',
+                                                                                                  'bit_offset': 0,
+                                                                                                  'bit_width': 32,
+                                                                                                  'description': 'MM2S '
+                                                                                                                 'DMA '
+                                                                                                                 'Current '
+                                                                                                                 'Descriptor '
+                                                                                                                 'Pointer '
+                                                                                                                 'Register'}},
+                                                        'size': 32},
+                                   'MM2S_DMACR': {'access': 'read-write',
+                                                  'address_offset': 0,
+                                                  'description': 'MM2S DMA '
+                                                                 'Control '
+                                                                 'Register',
+                                                  'fields': {'Cyclic_BD_Enable': {'access': 'read-write',
+                                                                                  'bit_offset': 4,
+                                                                                  'bit_width': 1,
+                                                                                  'description': 'MM2S '
+                                                                                                 'DMA '
+                                                                                                 'Control '
+                                                                                                 'Register'},
+                                                             'Dly_IrqEn': {'access': 'read-write',
+                                                                           'bit_offset': 13,
+                                                                           'bit_width': 1,
+                                                                           'description': 'MM2S '
+                                                                                          'DMA '
+                                                                                          'Control '
+                                                                                          'Register'},
+                                                             'Err_IrqEn': {'access': 'read-write',
+                                                                           'bit_offset': 14,
+                                                                           'bit_width': 1,
+                                                                           'description': 'MM2S '
+                                                                                          'DMA '
+                                                                                          'Control '
+                                                                                          'Register'},
+                                                             'IOC_IrqEn': {'access': 'read-write',
+                                                                           'bit_offset': 12,
+                                                                           'bit_width': 1,
+                                                                           'description': 'MM2S '
+                                                                                          'DMA '
+                                                                                          'Control '
+                                                                                          'Register'},
+                                                             'IRQDelay': {'access': 'read-write',
+                                                                          'bit_offset': 24,
+                                                                          'bit_width': 8,
+                                                                          'description': 'MM2S '
+                                                                                         'DMA '
+                                                                                         'Control '
+                                                                                         'Register'},
+                                                             'IRQThreshold': {'access': 'read-write',
+                                                                              'bit_offset': 16,
+                                                                              'bit_width': 8,
+                                                                              'description': 'MM2S '
+                                                                                             'DMA '
+                                                                                             'Control '
+                                                                                             'Register'},
+                                                             'Keyhole': {'access': 'read-write',
+                                                                         'bit_offset': 3,
+                                                                         'bit_width': 1,
+                                                                         'description': 'MM2S '
+                                                                                        'DMA '
+                                                                                        'Control '
+                                                                                        'Register'},
+                                                             'RS': {'access': 'read-write',
+                                                                    'bit_offset': 0,
+                                                                    'bit_width': 1,
+                                                                    'description': 'MM2S '
+                                                                                   'DMA '
+                                                                                   'Control '
+                                                                                   'Register'},
+                                                             'Reset': {'access': 'read-write',
+                                                                       'bit_offset': 2,
+                                                                       'bit_width': 1,
+                                                                       'description': 'MM2S '
+                                                                                      'DMA '
+                                                                                      'Control '
+                                                                                      'Register'}},
+                                                  'size': 32},
+                                   'MM2S_DMASR': {'access': 'read-write',
+                                                  'address_offset': 4,
+                                                  'description': 'MM2S DMA '
+                                                                 'Status '
+                                                                 'Register',
+                                                  'fields': {'DMADecErr': {'access': 'read-only',
+                                                                           'bit_offset': 6,
+                                                                           'bit_width': 1,
+                                                                           'description': 'MM2S '
+                                                                                          'DMA '
+                                                                                          'Status '
+                                                                                          'Register'},
+                                                             'DMAIntErr': {'access': 'read-only',
+                                                                           'bit_offset': 4,
+                                                                           'bit_width': 1,
+                                                                           'description': 'MM2S '
+                                                                                          'DMA '
+                                                                                          'Status '
+                                                                                          'Register'},
+                                                             'DMASlvErr': {'access': 'read-only',
+                                                                           'bit_offset': 5,
+                                                                           'bit_width': 1,
+                                                                           'description': 'MM2S '
+                                                                                          'DMA '
+                                                                                          'Status '
+                                                                                          'Register'},
+                                                             'Dly_Irq': {'access': 'read-write',
+                                                                         'bit_offset': 13,
+                                                                         'bit_width': 1,
+                                                                         'description': 'MM2S '
+                                                                                        'DMA '
+                                                                                        'Status '
+                                                                                        'Register'},
+                                                             'Err_Irq': {'access': 'read-write',
+                                                                         'bit_offset': 14,
+                                                                         'bit_width': 1,
+                                                                         'description': 'MM2S '
+                                                                                        'DMA '
+                                                                                        'Status '
+                                                                                        'Register'},
+                                                             'Halted': {'access': 'read-only',
+                                                                        'bit_offset': 0,
+                                                                        'bit_width': 1,
+                                                                        'description': 'MM2S '
+                                                                                       'DMA '
+                                                                                       'Status '
+                                                                                       'Register'},
+                                                             'IOC_Irq': {'access': 'read-write',
+                                                                         'bit_offset': 12,
+                                                                         'bit_width': 1,
+                                                                         'description': 'MM2S '
+                                                                                        'DMA '
+                                                                                        'Status '
+                                                                                        'Register'},
+                                                             'IRQDelaySts': {'access': 'read-only',
+                                                                             'bit_offset': 24,
+                                                                             'bit_width': 8,
+                                                                             'description': 'MM2S '
+                                                                                            'DMA '
+                                                                                            'Status '
+                                                                                            'Register'},
+                                                             'IRQThresholdSts': {'access': 'read-only',
+                                                                                 'bit_offset': 16,
+                                                                                 'bit_width': 8,
+                                                                                 'description': 'MM2S '
+                                                                                                'DMA '
+                                                                                                'Status '
+                                                                                                'Register'},
+                                                             'Idle': {'access': 'read-only',
+                                                                      'bit_offset': 1,
+                                                                      'bit_width': 1,
+                                                                      'description': 'MM2S '
+                                                                                     'DMA '
+                                                                                     'Status '
+                                                                                     'Register'},
+                                                             'SGDecErr': {'access': 'read-only',
+                                                                          'bit_offset': 10,
+                                                                          'bit_width': 1,
+                                                                          'description': 'MM2S '
+                                                                                         'DMA '
+                                                                                         'Status '
+                                                                                         'Register'},
+                                                             'SGIncld': {'access': 'read-only',
+                                                                         'bit_offset': 3,
+                                                                         'bit_width': 1,
+                                                                         'description': 'MM2S '
+                                                                                        'DMA '
+                                                                                        'Status '
+                                                                                        'Register'},
+                                                             'SGIntErr': {'access': 'read-only',
+                                                                          'bit_offset': 8,
+                                                                          'bit_width': 1,
+                                                                          'description': 'MM2S '
+                                                                                         'DMA '
+                                                                                         'Status '
+                                                                                         'Register'},
+                                                             'SGSlvErr': {'access': 'read-only',
+                                                                          'bit_offset': 9,
+                                                                          'bit_width': 1,
+                                                                          'description': 'MM2S '
+                                                                                         'DMA '
+                                                                                         'Status '
+                                                                                         'Register'}},
+                                                  'size': 32},
+                                   'MM2S_LENGTH': {'access': 'read-write',
+                                                   'address_offset': 40,
+                                                   'description': 'MM2S DMA '
+                                                                  'Transfer '
+                                                                  'Length '
+                                                                  'Register',
+                                                   'fields': {'Length': {'access': 'read-write',
+                                                                         'bit_offset': 0,
+                                                                         'bit_width': 26,
+                                                                         'description': 'MM2S '
+                                                                                        'DMA '
+                                                                                        'Transfer '
+                                                                                        'Length '
+                                                                                        'Register'}},
+                                                   'size': 32},
+                                   'MM2S_SA': {'access': 'read-write',
+                                               'address_offset': 24,
+                                               'description': 'MM2S Source '
+                                                              'Address '
+                                                              'Register',
+                                               'fields': {'Source_Address': {'access': 'read-write',
+                                                                             'bit_offset': 0,
+                                                                             'bit_width': 32,
+                                                                             'description': 'MM2S '
+                                                                                            'Source '
+                                                                                            'Address '
+                                                                                            'Register'}},
+                                               'size': 32},
+                                   'MM2S_SA_MSB': {'access': 'read-write',
+                                                   'address_offset': 28,
+                                                   'description': 'MM2S Source '
+                                                                  'Address '
+                                                                  'Register',
+                                                   'fields': {'Source_Address': {'access': 'read-write',
+                                                                                 'bit_offset': 0,
+                                                                                 'bit_width': 32,
+                                                                                 'description': 'MM2S '
+                                                                                                'Source '
+                                                                                                'Address '
+                                                                                                'Register'}},
+                                                   'size': 32},
+                                   'MM2S_TAILDESC': {'access': 'read-write',
+                                                     'address_offset': 16,
+                                                     'description': 'MM2S DMA '
+                                                                    'Tail '
+                                                                    'Descriptor '
+                                                                    'Pointer '
+                                                                    'Register',
+                                                     'fields': {'Tail_Descriptor_Pointer': {'access': 'read-write',
+                                                                                            'bit_offset': 6,
+                                                                                            'bit_width': 26,
+                                                                                            'description': 'MM2S '
+                                                                                                           'DMA '
+                                                                                                           'Tail '
+                                                                                                           'Descriptor '
+                                                                                                           'Pointer '
+                                                                                                           'Register'}},
+                                                     'size': 32},
+                                   'MM2S_TAILDESC_MSB': {'access': 'read-write',
+                                                         'address_offset': 20,
+                                                         'description': 'MM2S '
+                                                                        'DMA '
+                                                                        'Tail '
+                                                                        'Descriptor '
+                                                                        'Pointer '
+                                                                        'Register',
+                                                         'fields': {'Tail_Descriptor_Pointer': {'access': 'read-write',
+                                                                                                'bit_offset': 0,
+                                                                                                'bit_width': 32,
+                                                                                                'description': 'MM2S '
+                                                                                                               'DMA '
+                                                                                                               'Tail '
+                                                                                                               'Descriptor '
+                                                                                                               'Pointer '
+                                                                                                               'Register'}},
+                                                         'size': 32},
+                                   'S2MM_CURDESC': {'access': 'read-write',
+                                                    'address_offset': 56,
+                                                    'description': 'S2MM DMA '
+                                                                   'Current '
+                                                                   'Descriptor '
+                                                                   'Pointer '
+                                                                   'Register',
+                                                    'fields': {'Current_Descriptor_Pointer': {'access': 'read-write',
+                                                                                              'bit_offset': 6,
+                                                                                              'bit_width': 26,
+                                                                                              'description': 'S2MM '
+                                                                                                             'DMA '
+                                                                                                             'Current '
+                                                                                                             'Descriptor '
+                                                                                                             'Pointer '
+                                                                                                             'Register'}},
+                                                    'size': 32},
+                                   'S2MM_CURDESC_MSB': {'access': 'read-write',
+                                                        'address_offset': 60,
+                                                        'description': 'S2MM '
+                                                                       'DMA '
+                                                                       'Current '
+                                                                       'Descriptor '
+                                                                       'Pointer '
+                                                                       'Register',
+                                                        'fields': {'Current_Descriptor_Pointer': {'access': 'read-write',
+                                                                                                  'bit_offset': 0,
+                                                                                                  'bit_width': 32,
+                                                                                                  'description': 'S2MM '
+                                                                                                                 'DMA '
+                                                                                                                 'Current '
+                                                                                                                 'Descriptor '
+                                                                                                                 'Pointer '
+                                                                                                                 'Register'}},
+                                                        'size': 32},
+                                   'S2MM_DA': {'access': 'read-write',
+                                               'address_offset': 72,
+                                               'description': 'S2MM DMA '
+                                                              'Destination '
+                                                              'Address '
+                                                              'Register',
+                                               'fields': {'Destination_Address': {'access': 'read-write',
+                                                                                  'bit_offset': 0,
+                                                                                  'bit_width': 32,
+                                                                                  'description': 'S2MM '
+                                                                                                 'DMA '
+                                                                                                 'Destination '
+                                                                                                 'Address '
+                                                                                                 'Register'}},
+                                               'size': 32},
+                                   'S2MM_DA_MSB': {'access': 'read-write',
+                                                   'address_offset': 76,
+                                                   'description': 'S2MM '
+                                                                  'Destination '
+                                                                  'Address '
+                                                                  'Register',
+                                                   'fields': {'Destination_Address': {'access': 'read-write',
+                                                                                      'bit_offset': 0,
+                                                                                      'bit_width': 32,
+                                                                                      'description': 'S2MM '
+                                                                                                     'Destination '
+                                                                                                     'Address '
+                                                                                                     'Register'}},
+                                                   'size': 32},
+                                   'S2MM_DMACR': {'access': 'read-write',
+                                                  'address_offset': 48,
+                                                  'description': 'S2MM DMA '
+                                                                 'Control '
+                                                                 'Register',
+                                                  'fields': {'Cyclic_BD_Enable': {'access': 'read-write',
+                                                                                  'bit_offset': 4,
+                                                                                  'bit_width': 1,
+                                                                                  'description': 'S2MM '
+                                                                                                 'DMA '
+                                                                                                 'Control '
+                                                                                                 'Register'},
+                                                             'Dly_IrqEn': {'access': 'read-write',
+                                                                           'bit_offset': 13,
+                                                                           'bit_width': 1,
+                                                                           'description': 'S2MM '
+                                                                                          'DMA '
+                                                                                          'Control '
+                                                                                          'Register'},
+                                                             'Err_IrqEn': {'access': 'read-write',
+                                                                           'bit_offset': 14,
+                                                                           'bit_width': 1,
+                                                                           'description': 'S2MM '
+                                                                                          'DMA '
+                                                                                          'Control '
+                                                                                          'Register'},
+                                                             'IOC_IrqEn': {'access': 'read-write',
+                                                                           'bit_offset': 12,
+                                                                           'bit_width': 1,
+                                                                           'description': 'S2MM '
+                                                                                          'DMA '
+                                                                                          'Control '
+                                                                                          'Register'},
+                                                             'IRQDelay': {'access': 'read-write',
+                                                                          'bit_offset': 24,
+                                                                          'bit_width': 8,
+                                                                          'description': 'S2MM '
+                                                                                         'DMA '
+                                                                                         'Control '
+                                                                                         'Register'},
+                                                             'IRQThreshold': {'access': 'read-write',
+                                                                              'bit_offset': 16,
+                                                                              'bit_width': 8,
+                                                                              'description': 'S2MM '
+                                                                                             'DMA '
+                                                                                             'Control '
+                                                                                             'Register'},
+                                                             'Keyhole': {'access': 'read-write',
+                                                                         'bit_offset': 3,
+                                                                         'bit_width': 1,
+                                                                         'description': 'S2MM '
+                                                                                        'DMA '
+                                                                                        'Control '
+                                                                                        'Register'},
+                                                             'RS': {'access': 'read-write',
+                                                                    'bit_offset': 0,
+                                                                    'bit_width': 1,
+                                                                    'description': 'S2MM '
+                                                                                   'DMA '
+                                                                                   'Control '
+                                                                                   'Register'},
+                                                             'Reset': {'access': 'read-write',
+                                                                       'bit_offset': 2,
+                                                                       'bit_width': 1,
+                                                                       'description': 'S2MM '
+                                                                                      'DMA '
+                                                                                      'Control '
+                                                                                      'Register'}},
+                                                  'size': 32},
+                                   'S2MM_DMASR': {'access': 'read-write',
+                                                  'address_offset': 52,
+                                                  'description': 'S2MM DMA '
+                                                                 'Status '
+                                                                 'Register',
+                                                  'fields': {'DMADecErr': {'access': 'read-only',
+                                                                           'bit_offset': 6,
+                                                                           'bit_width': 1,
+                                                                           'description': 'S2MM '
+                                                                                          'DMA '
+                                                                                          'Status '
+                                                                                          'Register'},
+                                                             'DMAIntErr': {'access': 'read-only',
+                                                                           'bit_offset': 4,
+                                                                           'bit_width': 1,
+                                                                           'description': 'S2MM '
+                                                                                          'DMA '
+                                                                                          'Status '
+                                                                                          'Register'},
+                                                             'DMASlvErr': {'access': 'read-only',
+                                                                           'bit_offset': 5,
+                                                                           'bit_width': 1,
+                                                                           'description': 'S2MM '
+                                                                                          'DMA '
+                                                                                          'Status '
+                                                                                          'Register'},
+                                                             'Dly_Irq': {'access': 'read-write',
+                                                                         'bit_offset': 13,
+                                                                         'bit_width': 1,
+                                                                         'description': 'S2MM '
+                                                                                        'DMA '
+                                                                                        'Status '
+                                                                                        'Register'},
+                                                             'Err_Irq': {'access': 'read-write',
+                                                                         'bit_offset': 14,
+                                                                         'bit_width': 1,
+                                                                         'description': 'S2MM '
+                                                                                        'DMA '
+                                                                                        'Status '
+                                                                                        'Register'},
+                                                             'Halted': {'access': 'read-only',
+                                                                        'bit_offset': 0,
+                                                                        'bit_width': 1,
+                                                                        'description': 'S2MM '
+                                                                                       'DMA '
+                                                                                       'Status '
+                                                                                       'Register'},
+                                                             'IOC_Irq': {'access': 'read-write',
+                                                                         'bit_offset': 12,
+                                                                         'bit_width': 1,
+                                                                         'description': 'S2MM '
+                                                                                        'DMA '
+                                                                                        'Status '
+                                                                                        'Register'},
+                                                             'IRQDelaySts': {'access': 'read-only',
+                                                                             'bit_offset': 24,
+                                                                             'bit_width': 8,
+                                                                             'description': 'S2MM '
+                                                                                            'DMA '
+                                                                                            'Status '
+                                                                                            'Register'},
+                                                             'IRQThresholdSts': {'access': 'read-only',
+                                                                                 'bit_offset': 16,
+                                                                                 'bit_width': 8,
+                                                                                 'description': 'S2MM '
+                                                                                                'DMA '
+                                                                                                'Status '
+                                                                                                'Register'},
+                                                             'Idle': {'access': 'read-only',
+                                                                      'bit_offset': 1,
+                                                                      'bit_width': 1,
+                                                                      'description': 'S2MM '
+                                                                                     'DMA '
+                                                                                     'Status '
+                                                                                     'Register'},
+                                                             'SGDecErr': {'access': 'read-only',
+                                                                          'bit_offset': 10,
+                                                                          'bit_width': 1,
+                                                                          'description': 'S2MM '
+                                                                                         'DMA '
+                                                                                         'Status '
+                                                                                         'Register'},
+                                                             'SGIncld': {'access': 'read-only',
+                                                                         'bit_offset': 3,
+                                                                         'bit_width': 1,
+                                                                         'description': 'S2MM '
+                                                                                        'DMA '
+                                                                                        'Status '
+                                                                                        'Register'},
+                                                             'SGIntErr': {'access': 'read-only',
+                                                                          'bit_offset': 8,
+                                                                          'bit_width': 1,
+                                                                          'description': 'S2MM '
+                                                                                         'DMA '
+                                                                                         'Status '
+                                                                                         'Register'},
+                                                             'SGSlvErr': {'access': 'read-only',
+                                                                          'bit_offset': 9,
+                                                                          'bit_width': 1,
+                                                                          'description': 'S2MM '
+                                                                                         'DMA '
+                                                                                         'Status '
+                                                                                         'Register'}},
+                                                  'size': 32},
+                                   'S2MM_LENGTH': {'access': 'read-write',
+                                                   'address_offset': 88,
+                                                   'description': 'S2MM DMA '
+                                                                  'Transfer '
+                                                                  'Length '
+                                                                  'Register',
+                                                   'fields': {'Length': {'access': 'read-write',
+                                                                         'bit_offset': 0,
+                                                                         'bit_width': 26,
+                                                                         'description': 'S2MM '
+                                                                                        'DMA '
+                                                                                        'Transfer '
+                                                                                        'Length '
+                                                                                        'Register'}},
+                                                   'size': 32},
+                                   'S2MM_TAILDESC': {'access': 'read-write',
+                                                     'address_offset': 64,
+                                                     'description': 'S2MM DMA '
+                                                                    'Tail '
+                                                                    'Descriptor '
+                                                                    'Pointer '
+                                                                    'Register',
+                                                     'fields': {'Tail_Descriptor_Pointer': {'access': 'read-write',
+                                                                                            'bit_offset': 6,
+                                                                                            'bit_width': 26,
+                                                                                            'description': 'S2MM '
+                                                                                                           'DMA '
+                                                                                                           'Tail '
+                                                                                                           'Descriptor '
+                                                                                                           'Pointer '
+                                                                                                           'Register'}},
+                                                     'size': 32},
+                                   'S2MM_TAILDESC_MSB': {'access': 'read-write',
+                                                         'address_offset': 68,
+                                                         'description': 'S2MM '
+                                                                        'DMA '
+                                                                        'Tail '
+                                                                        'Descriptor '
+                                                                        'Pointer '
+                                                                        'Register',
+                                                         'fields': {'Tail_Descriptor_Pointer': {'access': 'read-write',
+                                                                                                'bit_offset': 0,
+                                                                                                'bit_width': 32,
+                                                                                                'description': 'S2MM '
+                                                                                                               'DMA '
+                                                                                                               'Tail '
+                                                                                                               'Descriptor '
+                                                                                                               'Pointer '
+                                                                                                               'Register'}},
+                                                         'size': 32},
+                                   'SG_CTL': {'access': 'read-write',
+                                              'address_offset': 44,
+                                              'description': 'Scatter/Gather '
+                                                             'User and Cache '
+                                                             'Control Register',
+                                              'fields': {'SG_CACHE': {'access': 'read-write',
+                                                                      'bit_offset': 0,
+                                                                      'bit_width': 4,
+                                                                      'description': 'Scatter/Gather '
+                                                                                     'User '
+                                                                                     'and '
+                                                                                     'Cache '
+                                                                                     'Control '
+                                                                                     'Register'},
+                                                         'SG_USER': {'access': 'read-write',
+                                                                     'bit_offset': 8,
+                                                                     'bit_width': 4,
+                                                                     'description': 'Scatter/Gather '
+                                                                                    'User '
+                                                                                    'and '
+                                                                                    'Cache '
+                                                                                    'Control '
+                                                                                    'Register'}},
+                                              'size': 32}},
+                     'state': None,
+                     'type': 'xilinx.com:ip:axi_dma:7.1'}}
+Matrix A is
+[[ 6.  3.  9.  8.]
+ [ 3.  4.  2.  9.]
+ [ 3.  4.  3.  8.]
+ [ 8.  9.  3.  5.]]
+Matrix B is
+[[ 6.  5.  5.  8.]
+ [ 9.  9.  9.  8.]
+ [ 3.  4.  9.  4.]
+ [ 1.  1.  7.  8.]]
+Answer is
+[[  98.  101.  194.  172.]
+ [  69.   68.  132.  136.]
+ [  71.   71.  134.  132.]
+ [ 143.  138.  183.  188.]]
+Your answer is:
+[[  98.  101.  194.  172.]
+ [  69.   68.  132.  136.]
+ [  71.   71.  134.  132.]
+ [ 143.  138.  183.  188.]]
+##########
+Thank Mr. Goose
+##########
+ssh -tt xilinx@192.168.2.99 "rm -Rf tutorial.*"
+make[1]: Leaving directory '/drives/c/Users/jlmrocze/Documents/ece327/1/jlmrocze-lab4'
