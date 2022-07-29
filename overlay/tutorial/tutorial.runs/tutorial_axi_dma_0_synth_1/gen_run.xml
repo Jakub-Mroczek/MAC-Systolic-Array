@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="tutorial_axi_dma_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1659119755">
+<GenRun Id="tutorial_axi_dma_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1659121379">
   <File Type="VDS-TIMING-PB" Name="tutorial_axi_dma_0_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="tutorial_axi_dma_0_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="tutorial_axi_dma_0.dcp"/>

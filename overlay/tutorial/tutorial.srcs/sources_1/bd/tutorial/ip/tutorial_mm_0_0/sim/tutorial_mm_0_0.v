@@ -95,9 +95,9 @@ input wire y_TREADY;
 output wire [0 : 0] y_TLAST;
 
   mm_axi #(
-    .M(8),
-    .N1(8),
-    .N2(8)
+    .M(15),
+    .N1(15),
+    .N2(15)
   ) inst (
     .clk(clk),
     .fclk(fclk),
