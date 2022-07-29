@@ -28,7 +28,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-set_property generic {M=8 N1=4 N2=4} [current_fileset]
+set_property generic {M=8 N1=8 N2=8} [current_fileset]
 read_verilog -library xil_defaultlib -sv {
   /home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_A.sv
   /home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_B.sv

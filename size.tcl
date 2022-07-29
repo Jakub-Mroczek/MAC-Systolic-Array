@@ -1,3 +1,4 @@
 set M 8
-set N1 4
-set N2 4
+set N1 8
+set N2 8
+set TIMEOUT 1

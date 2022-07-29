@@ -634,13 +634,13 @@
             "xci_name": "tutorial_mm_0_0",
             "parameters": {
               "M": {
-                "value": "15"
+                "value": "8"
               },
               "N1": {
-                "value": "15"
+                "value": "8"
               },
               "N2": {
-                "value": "15"
+                "value": "8"
               }
             },
             "reference_info": {
@@ -2952,6 +2952,12 @@
           }
         },
         "interface_nets": {
+          "m00_couplers_to_processing_system7_0_axi_periph": {
+            "interface_ports": [
+              "M00_AXI",
+              "m00_couplers/M_AXI"
+            ]
+          },
           "m02_couplers_to_processing_system7_0_axi_periph": {
             "interface_ports": [
               "M02_AXI",
@@ -2992,12 +2998,6 @@
             "interface_ports": [
               "s00_couplers/M_AXI",
               "xbar/S00_AXI"
-            ]
-          },
-          "m00_couplers_to_processing_system7_0_axi_periph": {
-            "interface_ports": [
-              "M00_AXI",
-              "m00_couplers/M_AXI"
             ]
           }
         },
@@ -3102,12 +3102,6 @@
           "processing_system7_0/DDR"
         ]
       },
-      "axi_dma_0_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_mem_intercon/S01_AXI",
-          "mm_eval/M_AXI_S2MM"
-        ]
-      },
       "axi_mem_intercon_M00_AXI": {
         "interface_ports": [
           "axi_mem_intercon/M00_AXI",
@@ -3118,6 +3112,12 @@
         "interface_ports": [
           "axi_mem_intercon/S00_AXI",
           "mm_eval/M_AXI_MM2S"
+        ]
+      },
+      "axi_dma_0_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_mem_intercon/S01_AXI",
+          "mm_eval/M_AXI_S2MM"
         ]
       }
     },

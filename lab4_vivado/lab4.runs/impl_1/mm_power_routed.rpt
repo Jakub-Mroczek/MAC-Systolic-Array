@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Tue Jul 19 01:14:59 2022
-| Host             : 5c15c51ef7f7 running 64-bit Ubuntu 18.04.5 LTS
+| Date             : Fri Jul 29 18:24:00 2022
+| Host             : 9b3282d6ad1d running 64-bit Ubuntu 18.04.5 LTS
 | Command          : report_power -file mm_power_routed.rpt -pb mm_power_summary_routed.pb -rpx mm_power_routed.rpx
 | Design           : mm
 | Device           : xc7z020clg400-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.129        |
+| Total On-Chip Power (W)  | 0.194        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.026        |
-| Device Static (W)        | 0.103        |
+| Dynamic (W)              | 0.090        |
+| Device Static (W)        | 0.104        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 83.5         |
-| Junction Temperature (C) | 26.5         |
+| Max Ambient (C)          | 82.8         |
+| Junction Temperature (C) | 27.2         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.011 |        4 |       --- |             --- |
-| Slice Logic              |     0.007 |     4037 |       --- |             --- |
-|   LUT as Logic           |     0.006 |     1657 |     53200 |            3.11 |
-|   CARRY4                 |    <0.001 |      232 |     13300 |            1.74 |
-|   Register               |    <0.001 |     1385 |    106400 |            1.30 |
-|   LUT as Distributed RAM |    <0.001 |      112 |     17400 |            0.64 |
-|   Others                 |     0.000 |       57 |       --- |             --- |
-| Signals                  |     0.008 |     3164 |       --- |             --- |
-| Static Power             |     0.103 |          |           |                 |
-| Total                    |     0.129 |          |           |                 |
+| Clocks                   |     0.034 |        4 |       --- |             --- |
+| Slice Logic              |     0.028 |    14408 |       --- |             --- |
+|   LUT as Logic           |     0.022 |     6405 |     53200 |           12.04 |
+|   CARRY4                 |     0.003 |      896 |     13300 |            6.74 |
+|   Register               |     0.002 |     4774 |    106400 |            4.49 |
+|   LUT as Distributed RAM |    <0.001 |      224 |     17400 |            1.29 |
+|   Others                 |     0.000 |      175 |       --- |             --- |
+| Signals                  |     0.028 |    11303 |       --- |             --- |
+| Static Power             |     0.104 |          |           |                 |
+| Total                    |     0.194 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.034 |       0.026 |      0.007 |
+| Vccint    |       1.000 |     0.097 |       0.090 |      0.008 |
 | Vccaux    |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -84,7 +84,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.016 |       0.000 |      0.016 |
+| Vccpint   |       1.000 |     0.017 |       0.000 |      0.017 |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -148,19 +148,52 @@ Table of Contents
 +-----------------------------------+-----------+
 | Name                              | Power (W) |
 +-----------------------------------+-----------+
-| mm                                |     0.026 |
-|   mm2s_inst                       |     0.004 |
-|   s2mm_inst                       |     0.005 |
-|   systolic_inst                   |     0.017 |
-|     genblk1[0].genblk1[0].pe_inst |     0.001 |
+| mm                                |     0.090 |
+|   mm2s_inst                       |     0.009 |
+|   s2mm_inst                       |     0.015 |
+|   systolic_inst                   |     0.065 |
 |     genblk1[0].genblk1[1].pe_inst |     0.001 |
 |     genblk1[0].genblk1[2].pe_inst |     0.001 |
 |     genblk1[0].genblk1[3].pe_inst |     0.001 |
+|     genblk1[0].genblk1[4].pe_inst |     0.001 |
+|     genblk1[0].genblk1[5].pe_inst |     0.001 |
+|     genblk1[0].genblk1[6].pe_inst |     0.001 |
 |     genblk1[1].genblk1[1].pe_inst |     0.001 |
 |     genblk1[1].genblk1[2].pe_inst |     0.001 |
-|     genblk1[2].genblk1[0].pe_inst |     0.001 |
+|     genblk1[1].genblk1[3].pe_inst |     0.001 |
+|     genblk1[1].genblk1[4].pe_inst |     0.001 |
+|     genblk1[1].genblk1[5].pe_inst |     0.001 |
+|     genblk1[1].genblk1[6].pe_inst |     0.001 |
 |     genblk1[2].genblk1[1].pe_inst |     0.001 |
 |     genblk1[2].genblk1[2].pe_inst |     0.001 |
+|     genblk1[2].genblk1[3].pe_inst |     0.001 |
+|     genblk1[2].genblk1[4].pe_inst |     0.001 |
+|     genblk1[2].genblk1[5].pe_inst |     0.001 |
+|     genblk1[2].genblk1[6].pe_inst |     0.001 |
+|     genblk1[3].genblk1[1].pe_inst |     0.001 |
+|     genblk1[3].genblk1[2].pe_inst |     0.001 |
+|     genblk1[3].genblk1[3].pe_inst |     0.001 |
+|     genblk1[3].genblk1[4].pe_inst |     0.001 |
+|     genblk1[3].genblk1[5].pe_inst |     0.001 |
+|     genblk1[3].genblk1[6].pe_inst |     0.001 |
+|     genblk1[4].genblk1[1].pe_inst |     0.001 |
+|     genblk1[4].genblk1[2].pe_inst |     0.001 |
+|     genblk1[4].genblk1[3].pe_inst |     0.001 |
+|     genblk1[4].genblk1[4].pe_inst |     0.001 |
+|     genblk1[4].genblk1[5].pe_inst |     0.001 |
+|     genblk1[4].genblk1[6].pe_inst |     0.001 |
+|     genblk1[5].genblk1[1].pe_inst |     0.001 |
+|     genblk1[5].genblk1[2].pe_inst |     0.001 |
+|     genblk1[5].genblk1[3].pe_inst |     0.001 |
+|     genblk1[5].genblk1[4].pe_inst |     0.001 |
+|     genblk1[5].genblk1[5].pe_inst |     0.001 |
+|     genblk1[5].genblk1[6].pe_inst |     0.001 |
+|     genblk1[6].genblk1[1].pe_inst |     0.001 |
+|     genblk1[6].genblk1[2].pe_inst |     0.001 |
+|     genblk1[6].genblk1[3].pe_inst |     0.001 |
+|     genblk1[6].genblk1[4].pe_inst |     0.001 |
+|     genblk1[6].genblk1[5].pe_inst |     0.001 |
+|     genblk1[6].genblk1[6].pe_inst |     0.001 |
 +-----------------------------------+-----------+
 
 

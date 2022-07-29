@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "mm_axi,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "tutorial_mm_0_0,mm_axi,{}" *)
-(* CORE_GENERATION_INFO = "tutorial_mm_0_0,mm_axi,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=mm_axi,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,M=15,N1=15,N2=15}" *)
+(* CORE_GENERATION_INFO = "tutorial_mm_0_0,mm_axi,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=mm_axi,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,M=8,N1=8,N2=8}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module tutorial_mm_0_0 (
@@ -96,9 +96,9 @@ input wire y_TREADY;
 output wire [0 : 0] y_TLAST;
 
   mm_axi #(
-    .M(15),
-    .N1(15),
-    .N2(15)
+    .M(8),
+    .N1(8),
+    .N2(8)
   ) inst (
     .clk(clk),
     .fclk(fclk),

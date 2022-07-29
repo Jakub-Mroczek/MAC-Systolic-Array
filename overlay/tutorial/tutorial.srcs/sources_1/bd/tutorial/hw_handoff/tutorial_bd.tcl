@@ -192,9 +192,9 @@ proc create_hier_cell_mm_eval { parentCell nameHier } {
      return 1
    }
     set_property -dict [ list \
-   CONFIG.M {15} \
-   CONFIG.N1 {15} \
-   CONFIG.N2 {15} \
+   CONFIG.M {8} \
+   CONFIG.N1 {8} \
+   CONFIG.N2 {8} \
  ] $mm_0
 
   # Create interface connections

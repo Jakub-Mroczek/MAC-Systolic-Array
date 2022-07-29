@@ -1,4 +1,4 @@
-set M 15
-set N1 15
-set N2 15
+set M 8
+set N1 8
+set N2 8
 set TIMEOUT 0

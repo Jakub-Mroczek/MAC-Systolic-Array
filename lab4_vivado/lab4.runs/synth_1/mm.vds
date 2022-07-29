@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Jul 19 01:13:40 2022
-# Process ID: 10489
+# Start of session at: Fri Jul 29 18:18:57 2022
+# Process ID: 6238
 # Current directory: /home/nachiket/ece327-s22/labs/jlmrocze-lab4/lab4_vivado/lab4.runs/synth_1
 # Command line: vivado -log mm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mm.tcl
 # Log file: /home/nachiket/ece327-s22/labs/jlmrocze-lab4/lab4_vivado/lab4.runs/synth_1/mm.vds
@@ -15,56 +15,64 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10508 
+INFO: Helper process launched with PID 6243 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1376.281 ; gain = 0.000 ; free physical = 676 ; free virtual = 14871
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1372.277 ; gain = 0.000 ; free physical = 2911 ; free virtual = 6968
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mm' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mm.sv:3]
 	Parameter M bound to: 8 - type: integer 
-	Parameter N1 bound to: 4 - type: integer 
-	Parameter N2 bound to: 4 - type: integer 
+	Parameter N1 bound to: 8 - type: integer 
+	Parameter N2 bound to: 8 - type: integer 
 	Parameter D_W bound to: 8 - type: integer 
 	Parameter D_W_ACC bound to: 16 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 's2mm' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:3]
 	Parameter M bound to: 8 - type: integer 
-	Parameter N1 bound to: 4 - type: integer 
-	Parameter N2 bound to: 4 - type: integer 
+	Parameter N1 bound to: 8 - type: integer 
+	Parameter N2 bound to: 8 - type: integer 
 	Parameter D_W bound to: 8 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mem' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem.v:1]
 	Parameter WIDTH bound to: 32 - type: integer 
-	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'mem' (1#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem.v:1]
 INFO: [Synth 8-6157] synthesizing module 'mem_read_A' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_A.sv:1]
 	Parameter D_W bound to: 8 - type: integer 
-	Parameter N bound to: 4 - type: integer 
+	Parameter N bound to: 8 - type: integer 
 	Parameter M bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'mem_read_A' (2#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_A.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'mem_read_B' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_B.sv:1]
 	Parameter D_W bound to: 8 - type: integer 
-	Parameter N bound to: 4 - type: integer 
+	Parameter N bound to: 8 - type: integer 
 	Parameter M bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'mem_read_B' (3#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_B.sv:1]
 WARNING: [Synth 8-6014] Unused sequential element ram_A[0].reg_banked_ready_A_reg[0] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:85]
 WARNING: [Synth 8-6014] Unused sequential element ram_A[1].reg_banked_ready_A_reg[1] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:95]
 WARNING: [Synth 8-6014] Unused sequential element ram_A[2].reg_banked_ready_A_reg[2] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:95]
 WARNING: [Synth 8-6014] Unused sequential element ram_A[3].reg_banked_ready_A_reg[3] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:95]
+WARNING: [Synth 8-6014] Unused sequential element ram_A[4].reg_banked_ready_A_reg[4] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:95]
+WARNING: [Synth 8-6014] Unused sequential element ram_A[5].reg_banked_ready_A_reg[5] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:95]
+WARNING: [Synth 8-6014] Unused sequential element ram_A[6].reg_banked_ready_A_reg[6] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:95]
+WARNING: [Synth 8-6014] Unused sequential element ram_A[7].reg_banked_ready_A_reg[7] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:95]
 WARNING: [Synth 8-6014] Unused sequential element ram_B[0].reg_banked_ready_B_reg[0] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:143]
 WARNING: [Synth 8-6014] Unused sequential element ram_B[1].reg_banked_ready_B_reg[1] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:153]
 WARNING: [Synth 8-6014] Unused sequential element ram_B[2].reg_banked_ready_B_reg[2] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:153]
 WARNING: [Synth 8-6014] Unused sequential element ram_B[3].reg_banked_ready_B_reg[3] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:153]
+WARNING: [Synth 8-6014] Unused sequential element ram_B[4].reg_banked_ready_B_reg[4] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:153]
+WARNING: [Synth 8-6014] Unused sequential element ram_B[5].reg_banked_ready_B_reg[5] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:153]
+WARNING: [Synth 8-6014] Unused sequential element ram_B[6].reg_banked_ready_B_reg[6] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:153]
+WARNING: [Synth 8-6014] Unused sequential element ram_B[7].reg_banked_ready_B_reg[7] was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:153]
 INFO: [Synth 8-6155] done synthesizing module 's2mm' (4#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/s2mm.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'mm2s' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mm2s.sv:3]
 	Parameter M bound to: 8 - type: integer 
-	Parameter N1 bound to: 4 - type: integer 
-	Parameter N2 bound to: 4 - type: integer 
+	Parameter N1 bound to: 8 - type: integer 
+	Parameter N2 bound to: 8 - type: integer 
 	Parameter D_W_ACC bound to: 16 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mem__parameterized0' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem.v:1]
 	Parameter WIDTH bound to: 16 - type: integer 
-	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'mem__parameterized0' (4#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem.v:1]
 INFO: [Synth 8-6157] synthesizing module 'mem_write' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_write.sv:1]
 	Parameter D_W bound to: 16 - type: integer 
-	Parameter N bound to: 4 - type: integer 
+	Parameter N bound to: 8 - type: integer 
 	Parameter M bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'mem_write' (5#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_write.sv:1]
 WARNING: [Synth 8-6014] Unused sequential element done_multiply_r_reg was removed.  [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mm2s.sv:145]
@@ -73,22 +81,22 @@ INFO: [Synth 8-6155] done synthesizing module 'mm2s' (6#1) [/home/nachiket/ece32
 INFO: [Synth 8-6157] synthesizing module 'systolic' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/systolic.sv:3]
 	Parameter D_W bound to: 8 - type: integer 
 	Parameter D_W_ACC bound to: 16 - type: integer 
-	Parameter N1 bound to: 4 - type: integer 
-	Parameter N2 bound to: 4 - type: integer 
+	Parameter N1 bound to: 8 - type: integer 
+	Parameter N2 bound to: 8 - type: integer 
 	Parameter M bound to: 8 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'pe' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/pe.v:3]
 	Parameter D_W_ACC bound to: 16 - type: integer 
 	Parameter D_W bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'pe' (7#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/pe.v:3]
 INFO: [Synth 8-6157] synthesizing module 'control' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/control.v:3]
-	Parameter N1 bound to: 4 - type: integer 
-	Parameter N2 bound to: 4 - type: integer 
+	Parameter N1 bound to: 8 - type: integer 
+	Parameter N2 bound to: 8 - type: integer 
 	Parameter M bound to: 8 - type: integer 
 	Parameter D_W bound to: 8 - type: integer 
 	Parameter D_W_ACC bound to: 16 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'counter' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/counter.v:1]
 	Parameter WIDTH bound to: 8 - type: integer 
-	Parameter HEIGHT bound to: 2 - type: integer 
+	Parameter HEIGHT bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'counter' (8#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/counter.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'control' (9#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/control.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'systolic' (10#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/systolic.sv:3]
@@ -123,7 +131,7 @@ WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tkeep[1]
 WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tkeep[0]
 WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tlast
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1397.703 ; gain = 21.422 ; free physical = 650 ; free virtual = 14846
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1397.699 ; gain = 25.422 ; free physical = 2888 ; free virtual = 6946
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -136,10 +144,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1397.703 ; gain = 21.422 ; free physical = 651 ; free virtual = 14847
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1397.699 ; gain = 25.422 ; free physical = 2889 ; free virtual = 6946
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1397.703 ; gain = 21.422 ; free physical = 651 ; free virtual = 14847
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1397.699 ; gain = 25.422 ; free physical = 2889 ; free virtual = 6946
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -150,35 +158,35 @@ Parsing XDC File [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mm.xdc]
 Finished Parsing XDC File [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mm.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1780.727 ; gain = 0.000 ; free physical = 274 ; free virtual = 14470
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1788.738 ; gain = 0.000 ; free physical = 2510 ; free virtual = 6568
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1780.727 ; gain = 0.000 ; free physical = 274 ; free virtual = 14470
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1780.727 ; gain = 0.000 ; free physical = 274 ; free virtual = 14470
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1788.738 ; gain = 0.000 ; free physical = 2510 ; free virtual = 6567
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1788.738 ; gain = 0.000 ; free physical = 2509 ; free virtual = 6567
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1780.727 ; gain = 404.445 ; free physical = 445 ; free virtual = 14642
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1788.738 ; gain = 416.461 ; free physical = 2689 ; free virtual = 6746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1780.727 ; gain = 404.445 ; free physical = 445 ; free virtual = 14642
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1788.738 ; gain = 416.461 ; free physical = 2689 ; free virtual = 6746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1780.727 ; gain = 404.445 ; free physical = 445 ; free virtual = 14642
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1788.738 ; gain = 416.461 ; free physical = 2690 ; free virtual = 6748
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "start_multiply" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "done_multiply_fclk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done_multiply_fclk" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "last_beat0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "temp" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "patch" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1780.727 ; gain = 404.445 ; free physical = 437 ; free virtual = 14634
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1788.738 ; gain = 416.461 ; free physical = 2682 ; free virtual = 6740
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -192,26 +200,23 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      7 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 4     
-	   2 Input      3 Bit       Adders := 2     
-	   2 Input      1 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 10    
 +---Registers : 
-	               32 Bit    Registers := 8     
-	               16 Bit    Registers := 56    
-	                8 Bit    Registers := 40    
-	                7 Bit    Registers := 10    
-	                6 Bit    Registers := 4     
-	                4 Bit    Registers := 14    
-	                3 Bit    Registers := 2     
+	               32 Bit    Registers := 16    
+	               16 Bit    Registers := 208   
+	                8 Bit    Registers := 152   
+	                7 Bit    Registers := 18    
+	                6 Bit    Registers := 8     
+	                3 Bit    Registers := 24    
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 63    
+	                1 Bit    Registers := 183   
 +---RAMs : 
-	              512 Bit         RAMs := 8     
-	              256 Bit         RAMs := 4     
+	              256 Bit         RAMs := 16    
+	              128 Bit         RAMs := 8     
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 51    
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 43    
+	   2 Input     16 Bit        Muxes := 199   
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 145   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -228,65 +233,66 @@ Detailed RTL Component Info :
 Module mem_read_A 
 Detailed RTL Component Info : 
 +---Registers : 
-	                4 Bit    Registers := 3     
-	                1 Bit    Registers := 3     
+	                3 Bit    Registers := 7     
+	                1 Bit    Registers := 7     
 Module mem_read_B 
 Detailed RTL Component Info : 
 +---Registers : 
-	                4 Bit    Registers := 3     
-	                1 Bit    Registers := 3     
+	                3 Bit    Registers := 7     
+	                1 Bit    Registers := 7     
 Module mem 
 Detailed RTL Component Info : 
 +---Registers : 
 	               32 Bit    Registers := 1     
 +---RAMs : 
-	              512 Bit         RAMs := 1     
+	              256 Bit         RAMs := 1     
 Module s2mm 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 8     
-	                7 Bit    Registers := 9     
-	                1 Bit    Registers := 9     
+	                8 Bit    Registers := 16    
+	                7 Bit    Registers := 17    
+	                1 Bit    Registers := 17    
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
 Module mem_write 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 8     
 +---Registers : 
-	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 8     
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
 Module mem__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
 	               16 Bit    Registers := 1     
 +---RAMs : 
-	              256 Bit         RAMs := 1     
+	              128 Bit         RAMs := 1     
 Module mm2s 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
-	               16 Bit    Registers := 4     
+	               16 Bit    Registers := 8     
 	                7 Bit    Registers := 1     
-	                6 Bit    Registers := 4     
+	                6 Bit    Registers := 8     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 12    
+	                1 Bit    Registers := 20    
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 7     
 	   2 Input      1 Bit        Muxes := 2     
 Module counter 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      3 Bit       Adders := 1     
-	   2 Input      1 Bit       Adders := 1     
 +---Registers : 
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
 Module pe 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -299,7 +305,7 @@ Detailed RTL Component Info :
 Module systolic 
 Detailed RTL Component Info : 
 +---Registers : 
-	                4 Bit    Registers := 4     
+	                8 Bit    Registers := 8     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
@@ -319,12 +325,14 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "temp" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-4471] merging register 's2mm_inst/mem_read_B_inst/genblk1[1].rd_en_bram_reg_reg[1:1]' into 's2mm_inst/mem_read_A_inst/genblk1[1].rd_en_bram_reg_reg[1:1]' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_B.sv:30]
 INFO: [Synth 8-4471] merging register 's2mm_inst/mem_read_B_inst/genblk1[2].rd_en_bram_reg_reg[2:2]' into 's2mm_inst/mem_read_A_inst/genblk1[2].rd_en_bram_reg_reg[2:2]' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_B.sv:30]
 INFO: [Synth 8-4471] merging register 's2mm_inst/mem_read_B_inst/genblk1[3].rd_en_bram_reg_reg[3:3]' into 's2mm_inst/mem_read_A_inst/genblk1[3].rd_en_bram_reg_reg[3:3]' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_B.sv:30]
-INFO: [Synth 8-4471] merging register 'systolic_inst/genblk1[1].genblk1[0].pe_inst/flag_reg' into 'systolic_inst/genblk1[0].genblk1[0].pe_inst/flag_reg' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/pe.v:35]
-INFO: [Synth 8-4471] merging register 'systolic_inst/genblk1[2].genblk1[0].pe_inst/flag_reg' into 'systolic_inst/genblk1[0].genblk1[0].pe_inst/flag_reg' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/pe.v:35]
-INFO: [Synth 8-4471] merging register 'systolic_inst/genblk1[3].genblk1[0].pe_inst/flag_reg' into 'systolic_inst/genblk1[0].genblk1[0].pe_inst/flag_reg' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/pe.v:35]
+INFO: [Synth 8-4471] merging register 's2mm_inst/mem_read_B_inst/genblk1[4].rd_en_bram_reg_reg[4:4]' into 's2mm_inst/mem_read_A_inst/genblk1[4].rd_en_bram_reg_reg[4:4]' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_B.sv:30]
+INFO: [Synth 8-4471] merging register 's2mm_inst/mem_read_B_inst/genblk1[5].rd_en_bram_reg_reg[5:5]' into 's2mm_inst/mem_read_A_inst/genblk1[5].rd_en_bram_reg_reg[5:5]' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_B.sv:30]
+INFO: [Synth 8-4471] merging register 's2mm_inst/mem_read_B_inst/genblk1[6].rd_en_bram_reg_reg[6:6]' into 's2mm_inst/mem_read_A_inst/genblk1[6].rd_en_bram_reg_reg[6:6]' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_B.sv:30]
+INFO: [Synth 8-4471] merging register 's2mm_inst/mem_read_B_inst/genblk1[7].rd_en_bram_reg_reg[7:7]' into 's2mm_inst/mem_read_A_inst/genblk1[7].rd_en_bram_reg_reg[7:7]' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/mem_read_B.sv:30]
 INFO: [Synth 8-5546] ROM "s2mm_inst/start_multiply" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3917] design mm has port m_axis_mm2s_tdata[31] driven by constant 0
 WARNING: [Synth 8-3917] design mm has port m_axis_mm2s_tdata[30] driven by constant 0
@@ -375,135 +383,125 @@ WARNING: [Synth 8-3331] design mm has unconnected port s_axis_s2mm_tkeep[2]
 WARNING: [Synth 8-3331] design mm has unconnected port s_axis_s2mm_tkeep[1]
 WARNING: [Synth 8-3331] design mm has unconnected port s_axis_s2mm_tkeep[0]
 WARNING: [Synth 8-3331] design mm has unconnected port s_axis_s2mm_tlast
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_B_inst/genblk1[1].rd_addr_bram_reg_reg[1]_rep[0]' (FD) to 's2mm_inst/mem_read_B_inst/genblk1[1].rd_addr_bram_reg_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_B_inst/genblk1[1].rd_addr_bram_reg_reg[1]_rep[1]' (FD) to 's2mm_inst/mem_read_B_inst/genblk1[1].rd_addr_bram_reg_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_B_inst/genblk1[1].rd_addr_bram_reg_reg[1]_rep[2]' (FD) to 's2mm_inst/mem_read_B_inst/genblk1[1].rd_addr_bram_reg_reg[1][2]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_B_inst/genblk1[1].rd_addr_bram_reg_reg[1]_rep[3]' (FD) to 's2mm_inst/mem_read_B_inst/genblk1[1].rd_addr_bram_reg_reg[1][3]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[4]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[5]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[2]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[3]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[0]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[1]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[10]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[11]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[8]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[9]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[6]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[7]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[14]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[15]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[12]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[13]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[4]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[5]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[2]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[3]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[0]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[1]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[10]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[11]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[8]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[9]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[6]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[7]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_A_inst/genblk1[1].rd_addr_bram_reg_reg[1]_rep[0]' (FD) to 's2mm_inst/mem_read_A_inst/genblk1[1].rd_addr_bram_reg_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_A_inst/genblk1[1].rd_addr_bram_reg_reg[1]_rep[1]' (FD) to 's2mm_inst/mem_read_A_inst/genblk1[1].rd_addr_bram_reg_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_A_inst/genblk1[1].rd_addr_bram_reg_reg[1]_rep[2]' (FD) to 's2mm_inst/mem_read_A_inst/genblk1[1].rd_addr_bram_reg_reg[1][2]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_A_inst/genblk1[1].rd_addr_bram_reg_reg[1]_rep[3]' (FD) to 's2mm_inst/mem_read_A_inst/genblk1[1].rd_addr_bram_reg_reg[1][3]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[14]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[15]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[12]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[13]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_B_inst/genblk1[2].rd_addr_bram_reg_reg[2]_rep[0]' (FD) to 's2mm_inst/mem_read_B_inst/genblk1[2].rd_addr_bram_reg_reg[2][0]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_B_inst/genblk1[2].rd_addr_bram_reg_reg[2]_rep[1]' (FD) to 's2mm_inst/mem_read_B_inst/genblk1[2].rd_addr_bram_reg_reg[2][1]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_B_inst/genblk1[2].rd_addr_bram_reg_reg[2]_rep[2]' (FD) to 's2mm_inst/mem_read_B_inst/genblk1[2].rd_addr_bram_reg_reg[2][2]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_B_inst/genblk1[2].rd_addr_bram_reg_reg[2]_rep[3]' (FD) to 's2mm_inst/mem_read_B_inst/genblk1[2].rd_addr_bram_reg_reg[2][3]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[4]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[5]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[2]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[3]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[0]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[1]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[10]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[11]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[8]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[9]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[6]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[7]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_A_inst/genblk1[2].rd_addr_bram_reg_reg[2]_rep[0]' (FD) to 's2mm_inst/mem_read_A_inst/genblk1[2].rd_addr_bram_reg_reg[2][0]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_A_inst/genblk1[2].rd_addr_bram_reg_reg[2]_rep[1]' (FD) to 's2mm_inst/mem_read_A_inst/genblk1[2].rd_addr_bram_reg_reg[2][1]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_A_inst/genblk1[2].rd_addr_bram_reg_reg[2]_rep[2]' (FD) to 's2mm_inst/mem_read_A_inst/genblk1[2].rd_addr_bram_reg_reg[2][2]'
-INFO: [Synth 8-3886] merging instance 's2mm_inst/mem_read_A_inst/genblk1[2].rd_addr_bram_reg_reg[2]_rep[3]' (FD) to 's2mm_inst/mem_read_A_inst/genblk1[2].rd_addr_bram_reg_reg[2][3]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[14]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[15]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[12]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[13]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[1][0]' (FDR) to 'systolic_inst/init_pe_r_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[2][0]' (FDR) to 'systolic_inst/init_pe_r_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[1][1]' (FDR) to 'systolic_inst/init_pe_r_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[3][0]' (FDR) to 'systolic_inst/init_pe_r_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[2][1]' (FDR) to 'systolic_inst/init_pe_r_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[1][2]' (FDR) to 'systolic_inst/init_pe_r_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[4][0]' (FDR) to 'systolic_inst/init_pe_r_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[3][1]' (FDR) to 'systolic_inst/init_pe_r_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[2][2]' (FDR) to 'systolic_inst/init_pe_r_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[1][3]' (FDR) to 'systolic_inst/init_pe_r_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[5][0]' (FDR) to 'systolic_inst/init_pe_r_reg[4][1]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[4][1]' (FDR) to 'systolic_inst/init_pe_r_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[3][2]' (FDR) to 'systolic_inst/init_pe_r_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[2][3]' (FDR) to 'systolic_inst/init_pe_r_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[1][4]' (FDR) to 'systolic_inst/init_pe_r_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[6][0]' (FDR) to 'systolic_inst/init_pe_r_reg[4][2]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[5][1]' (FDR) to 'systolic_inst/init_pe_r_reg[4][2]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[4][2]' (FDR) to 'systolic_inst/init_pe_r_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[3][3]' (FDR) to 'systolic_inst/init_pe_r_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[2][4]' (FDR) to 'systolic_inst/init_pe_r_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[1][5]' (FDR) to 'systolic_inst/init_pe_r_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[7][0]' (FDR) to 'systolic_inst/init_pe_r_reg[6][1]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[6][1]' (FDR) to 'systolic_inst/init_pe_r_reg[4][3]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[5][2]' (FDR) to 'systolic_inst/init_pe_r_reg[4][3]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[4][3]' (FDR) to 'systolic_inst/init_pe_r_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[3][4]' (FDR) to 'systolic_inst/init_pe_r_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[2][5]' (FDR) to 'systolic_inst/init_pe_r_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[1][6]' (FDR) to 'systolic_inst/init_pe_r_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[7][1]' (FDR) to 'systolic_inst/init_pe_r_reg[6][2]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[6][2]' (FDR) to 'systolic_inst/init_pe_r_reg[4][4]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[5][3]' (FDR) to 'systolic_inst/init_pe_r_reg[4][4]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[4][4]' (FDR) to 'systolic_inst/init_pe_r_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[3][5]' (FDR) to 'systolic_inst/init_pe_r_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[2][6]' (FDR) to 'systolic_inst/init_pe_r_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[7][2]' (FDR) to 'systolic_inst/init_pe_r_reg[6][3]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[6][3]' (FDR) to 'systolic_inst/init_pe_r_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[5][4]' (FDR) to 'systolic_inst/init_pe_r_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[4][5]' (FDR) to 'systolic_inst/init_pe_r_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[3][6]' (FDR) to 'systolic_inst/init_pe_r_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[7][3]' (FDR) to 'systolic_inst/init_pe_r_reg[6][4]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[6][4]' (FDR) to 'systolic_inst/init_pe_r_reg[4][6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[5][5]' (FDR) to 'systolic_inst/init_pe_r_reg[4][6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[4][6]' (FDR) to 'systolic_inst/init_pe_r_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[7][4]' (FDR) to 'systolic_inst/init_pe_r_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[6][5]' (FDR) to 'systolic_inst/init_pe_r_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[5][6]' (FDR) to 'systolic_inst/init_pe_r_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[7][5]' (FDR) to 'systolic_inst/init_pe_r_reg[6][6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[6][6]' (FDR) to 'systolic_inst/init_pe_r_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[7][6]' (FDR) to 'systolic_inst/init_pe_r_reg[6][7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[4]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[5]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[2]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[3]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[0]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[1]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[10]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[11]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[8]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[9]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[6]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[7]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[14]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[15]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[12]' (FDE) to 'systolic_inst/genblk1[0].genblk1[0].pe_inst/internal_data_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[0].genblk1[0].pe_inst /\internal_data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[0].genblk1[0].pe_inst /flag_reg)
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[4]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[5]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[2]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[3]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[0]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[1]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[10]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[11]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[8]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[9]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[6]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[7]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[14]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[15]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[12]' (FDE) to 'systolic_inst/genblk1[1].genblk1[0].pe_inst/internal_data_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[1].genblk1[0].pe_inst /\internal_data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[1].genblk1[0].pe_inst /flag_reg)
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[4]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[5]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[2]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[3]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[0]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[1]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[10]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[11]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[8]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[9]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[6]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[7]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[14]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[15]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[12]' (FDE) to 'systolic_inst/genblk1[2].genblk1[0].pe_inst/internal_data_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[2].genblk1[0].pe_inst /\internal_data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[2].genblk1[0].pe_inst /flag_reg)
 INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[4]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
 INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[5]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
 INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[2]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
 INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[3]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]'
 INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[0]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[1]'
 INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[1]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[6]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[10]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[6]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[11]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[6]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[8]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[6]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[9]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[6]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[6]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[7]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[12]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[14]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[12]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[15]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[12]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[12]' (FDE) to 'systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[13]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\systolic_inst/genblk1[3].genblk1[0].pe_inst/internal_data_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\systolic_inst/genblk1[0].genblk1[0].pe_inst/flag_reg )
-INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[3][0]' (FDR) to 'systolic_inst/init_pe_r_reg[2][1]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[1][0]' (FDR) to 'systolic_inst/init_pe_r_reg[0][1]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[3][1]' (FDR) to 'systolic_inst/init_pe_r_reg[2][2]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[2][0]' (FDR) to 'systolic_inst/init_pe_r_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[1][1]' (FDR) to 'systolic_inst/init_pe_r_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[2][1]' (FDR) to 'systolic_inst/init_pe_r_reg[0][3]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[1][2]' (FDR) to 'systolic_inst/init_pe_r_reg[0][3]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[3][2]' (FDR) to 'systolic_inst/init_pe_r_reg[2][3]'
-INFO: [Synth 8-3886] merging instance 'systolic_inst/init_pe_r_reg[2][2]' (FDR) to 'systolic_inst/init_pe_r_reg[1][3]'
-INFO: [Synth 8-3886] merging instance 'mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0]_rep[0]' (FDE) to 'mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0][0]'
-INFO: [Synth 8-3886] merging instance 'mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0]_rep[1]' (FDE) to 'mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0][1]'
-INFO: [Synth 8-3886] merging instance 'mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0]_rep[2]' (FDE) to 'mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0]_rep[3]' (FDE) to 'mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0][3]'
-INFO: [Synth 8-3886] merging instance 'mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1]_rep[0]' (FDE) to 'mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1]_rep[1]' (FDE) to 'mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1]_rep[2]' (FDE) to 'mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1][2]'
-INFO: [Synth 8-3886] merging instance 'mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1]_rep[3]' (FDE) to 'mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1][3]'
-INFO: [Synth 8-3886] merging instance 'mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2]_rep[0]' (FDE) to 'mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2][0]'
-INFO: [Synth 8-3886] merging instance 'mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2]_rep[1]' (FDE) to 'mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2][1]'
-INFO: [Synth 8-3886] merging instance 'mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2]_rep[2]' (FDE) to 'mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2][2]'
-INFO: [Synth 8-3886] merging instance 'mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2]_rep[3]' (FDE) to 'mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2][3]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0]_rep[5]) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0]_rep[4]) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0]_rep[3]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0]_rep[2]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0]_rep[1]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[0].reg_banked_read_addr_D_reg[0]_rep[0]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1]_rep[5]) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1]_rep[4]) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1]_rep[3]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1]_rep[2]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1]_rep[1]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[1].reg_banked_read_addr_D_reg[1]_rep[0]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2]_rep[5]) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2]_rep[4]) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2]_rep[3]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2]_rep[2]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2]_rep[1]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[2].reg_banked_read_addr_D_reg[2]_rep[0]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[3].reg_banked_read_addr_D_reg[3]_rep[5]) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[3].reg_banked_read_addr_D_reg[3]_rep[4]) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[3].reg_banked_read_addr_D_reg[3]_rep[3]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[3].reg_banked_read_addr_D_reg[3]_rep[2]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[3].reg_banked_read_addr_D_reg[3]_rep[1]__0) is unused and will be removed from module mm.
-WARNING: [Synth 8-3332] Sequential element (mm2s_inst/ram_D[3].reg_banked_read_addr_D_reg[3]_rep[0]__0) is unused and will be removed from module mm.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[3].genblk1[0].pe_inst /\internal_data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[3].genblk1[0].pe_inst /flag_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[4].genblk1[0].pe_inst /\internal_data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[4].genblk1[0].pe_inst /flag_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[5].genblk1[0].pe_inst /\internal_data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[5].genblk1[0].pe_inst /flag_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[6].genblk1[0].pe_inst /\internal_data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[6].genblk1[0].pe_inst /flag_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[7].genblk1[0].pe_inst /\internal_data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (systolic_inst/\genblk1[7].genblk1[0].pe_inst /flag_reg)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1780.727 ; gain = 404.445 ; free physical = 404 ; free virtual = 14603
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1788.738 ; gain = 416.461 ; free physical = 2646 ; free virtual = 6706
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -513,18 +511,30 @@ Distributed RAM: Preliminary Mapping  Report (see note below)
 +------------+----------------------------------------+-----------+----------------------+--------------+
 |Module Name | RTL Object                             | Inference | Size (Depth x Width) | Primitives   | 
 +------------+----------------------------------------+-----------+----------------------+--------------+
-|mm          | s2mm_inst/ram_B[0].read_ram_B/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | s2mm_inst/ram_A[0].read_ram_A/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | s2mm_inst/ram_B[1].read_ram_B/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | s2mm_inst/ram_B[2].read_ram_B/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | s2mm_inst/ram_B[3].read_ram_B/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | mm2s_inst/ram_D[0].write_ram_D/mem_reg | Implied   | 16 x 16              | RAM32M x 3   | 
-|mm          | s2mm_inst/ram_A[1].read_ram_A/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | mm2s_inst/ram_D[1].write_ram_D/mem_reg | Implied   | 16 x 16              | RAM32M x 3   | 
-|mm          | s2mm_inst/ram_A[2].read_ram_A/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | mm2s_inst/ram_D[2].write_ram_D/mem_reg | Implied   | 16 x 16              | RAM32M x 3   | 
-|mm          | s2mm_inst/ram_A[3].read_ram_A/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | mm2s_inst/ram_D[3].write_ram_D/mem_reg | Implied   | 16 x 16              | RAM32M x 3   | 
+|mm          | s2mm_inst/ram_A[0].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[1].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[2].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[3].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[4].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[5].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[6].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[7].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[0].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[1].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[2].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[3].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[4].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[5].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[6].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[7].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | mm2s_inst/ram_D[0].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[1].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[2].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[3].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[4].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[5].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[6].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[7].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
 +------------+----------------------------------------+-----------+----------------------+--------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
@@ -541,13 +551,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1780.727 ; gain = 404.445 ; free physical = 280 ; free virtual = 14479
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 1788.738 ; gain = 416.461 ; free physical = 2518 ; free virtual = 6578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1832.320 ; gain = 456.039 ; free physical = 216 ; free virtual = 14415
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1788.738 ; gain = 416.461 ; free physical = 2497 ; free virtual = 6558
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -557,18 +567,30 @@ Distributed RAM: Final Mapping  Report
 +------------+----------------------------------------+-----------+----------------------+--------------+
 |Module Name | RTL Object                             | Inference | Size (Depth x Width) | Primitives   | 
 +------------+----------------------------------------+-----------+----------------------+--------------+
-|mm          | s2mm_inst/ram_B[0].read_ram_B/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | s2mm_inst/ram_A[0].read_ram_A/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | s2mm_inst/ram_B[1].read_ram_B/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | s2mm_inst/ram_B[2].read_ram_B/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | s2mm_inst/ram_B[3].read_ram_B/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | mm2s_inst/ram_D[0].write_ram_D/mem_reg | Implied   | 16 x 16              | RAM32M x 3   | 
-|mm          | s2mm_inst/ram_A[1].read_ram_A/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | mm2s_inst/ram_D[1].write_ram_D/mem_reg | Implied   | 16 x 16              | RAM32M x 3   | 
-|mm          | s2mm_inst/ram_A[2].read_ram_A/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | mm2s_inst/ram_D[2].write_ram_D/mem_reg | Implied   | 16 x 16              | RAM32M x 3   | 
-|mm          | s2mm_inst/ram_A[3].read_ram_A/mem_reg  | Implied   | 16 x 8               | RAM32M x 6   | 
-|mm          | mm2s_inst/ram_D[3].write_ram_D/mem_reg | Implied   | 16 x 16              | RAM32M x 3   | 
+|mm          | s2mm_inst/ram_A[0].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[1].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[2].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[3].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[4].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[5].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[6].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_A[7].read_ram_A/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[0].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[1].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[2].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[3].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[4].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[5].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[6].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | s2mm_inst/ram_B[7].read_ram_B/mem_reg  | Implied   | 8 x 8                | RAM32M x 6   | 
+|mm          | mm2s_inst/ram_D[0].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[1].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[2].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[3].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[4].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[5].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[6].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
+|mm          | mm2s_inst/ram_D[7].write_ram_D/mem_reg | Implied   | 8 x 16               | RAM32M x 3   | 
 +------------+----------------------------------------+-----------+----------------------+--------------+
 
 ---------------------------------------------------------------------------------
@@ -584,7 +606,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1850.844 ; gain = 474.562 ; free physical = 214 ; free virtual = 14413
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:20 . Memory (MB): peak = 1849.809 ; gain = 477.531 ; free physical = 2483 ; free virtual = 6543
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -608,7 +630,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1850.844 ; gain = 474.562 ; free physical = 218 ; free virtual = 14417
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 1849.809 ; gain = 477.531 ; free physical = 2484 ; free virtual = 6545
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -621,7 +643,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1850.844 ; gain = 474.562 ; free physical = 218 ; free virtual = 14417
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 1849.809 ; gain = 477.531 ; free physical = 2484 ; free virtual = 6545
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -633,25 +655,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1850.844 ; gain = 474.562 ; free physical = 218 ; free virtual = 14417
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 1849.809 ; gain = 477.531 ; free physical = 2484 ; free virtual = 6544
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1850.844 ; gain = 474.562 ; free physical = 218 ; free virtual = 14418
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 1849.809 ; gain = 477.531 ; free physical = 2484 ; free virtual = 6544
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1850.844 ; gain = 474.562 ; free physical = 218 ; free virtual = 14418
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1849.809 ; gain = 477.531 ; free physical = 2483 ; free virtual = 6544
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1850.844 ; gain = 474.562 ; free physical = 218 ; free virtual = 14418
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:20 ; elapsed = 00:01:27 . Memory (MB): peak = 1849.809 ; gain = 477.531 ; free physical = 2483 ; free virtual = 6544
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -667,84 +689,144 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |CARRY4 |   232|
-|2     |LUT1   |    13|
-|3     |LUT2   |   376|
-|4     |LUT3   |   601|
-|5     |LUT4   |   491|
-|6     |LUT5   |    88|
-|7     |LUT6   |   572|
-|8     |RAM32M |    28|
-|9     |FDRE   |  1384|
-|10    |FDSE   |     1|
+|1     |CARRY4 |   896|
+|2     |LUT1   |     8|
+|3     |LUT2   |  1784|
+|4     |LUT3   |  2297|
+|5     |LUT4   |  1419|
+|6     |LUT5   |   228|
+|7     |LUT6   |  2381|
+|8     |RAM32M |    56|
+|9     |FDRE   |  4774|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+------------------------------------+-----------------------+------+
 |      |Instance                            |Module                 |Cells |
 +------+------------------------------------+-----------------------+------+
-|1     |top                                 |                       |  3786|
-|2     |  mm2s_inst                         |mm2s                   |   295|
-|3     |    mem_write_D                     |mem_write              |    38|
-|4     |    \ram_D[0].write_ram_D           |mem__parameterized0    |    21|
-|5     |    \ram_D[1].write_ram_D           |mem__parameterized0_23 |    21|
-|6     |    \ram_D[2].write_ram_D           |mem__parameterized0_24 |    21|
-|7     |    \ram_D[3].write_ram_D           |mem__parameterized0_25 |    21|
-|8     |  s2mm_inst                         |s2mm                   |   527|
-|9     |    mem_read_A_inst                 |mem_read_A             |    16|
-|10    |    mem_read_B_inst                 |mem_read_B             |    12|
-|11    |    \ram_A[0].read_ram_A            |mem                    |    45|
-|12    |    \ram_A[1].read_ram_A            |mem_16                 |    41|
-|13    |    \ram_A[2].read_ram_A            |mem_17                 |    41|
-|14    |    \ram_A[3].read_ram_A            |mem_18                 |    42|
-|15    |    \ram_B[0].read_ram_B            |mem_19                 |    55|
-|16    |    \ram_B[1].read_ram_B            |mem_20                 |    34|
-|17    |    \ram_B[2].read_ram_B            |mem_21                 |    34|
-|18    |    \ram_B[3].read_ram_B            |mem_22                 |    34|
-|19    |  systolic_inst                     |systolic               |  2912|
-|20    |    control_inst                    |control                |    21|
-|21    |      counter_A                     |counter                |    13|
-|22    |      counter_B                     |counter_15             |     8|
-|23    |    \genblk1[0].genblk1[0].pe_inst  |pe                     |   177|
-|24    |    \genblk1[0].genblk1[1].pe_inst  |pe_0                   |   222|
-|25    |    \genblk1[0].genblk1[2].pe_inst  |pe_1                   |   222|
-|26    |    \genblk1[0].genblk1[3].pe_inst  |pe_2                   |   170|
-|27    |    \genblk1[1].genblk1[0].pe_inst  |pe_3                   |   175|
-|28    |    \genblk1[1].genblk1[1].pe_inst  |pe_4                   |   208|
-|29    |    \genblk1[1].genblk1[2].pe_inst  |pe_5                   |   208|
-|30    |    \genblk1[1].genblk1[3].pe_inst  |pe_6                   |   167|
-|31    |    \genblk1[2].genblk1[0].pe_inst  |pe_7                   |   175|
-|32    |    \genblk1[2].genblk1[1].pe_inst  |pe_8                   |   208|
-|33    |    \genblk1[2].genblk1[2].pe_inst  |pe_9                   |   208|
-|34    |    \genblk1[2].genblk1[3].pe_inst  |pe_10                  |   167|
-|35    |    \genblk1[3].genblk1[0].pe_inst  |pe_11                  |   128|
-|36    |    \genblk1[3].genblk1[1].pe_inst  |pe_12                  |   163|
-|37    |    \genblk1[3].genblk1[2].pe_inst  |pe_13                  |   163|
-|38    |    \genblk1[3].genblk1[3].pe_inst  |pe_14                  |   122|
+|1     |top                                 |                       | 13843|
+|2     |  mm2s_inst                         |mm2s                   |   546|
+|3     |    mem_write_D                     |mem_write              |    49|
+|4     |    \ram_D[0].write_ram_D           |mem__parameterized0    |    20|
+|5     |    \ram_D[1].write_ram_D           |mem__parameterized0_79 |    20|
+|6     |    \ram_D[2].write_ram_D           |mem__parameterized0_80 |    20|
+|7     |    \ram_D[3].write_ram_D           |mem__parameterized0_81 |    20|
+|8     |    \ram_D[4].write_ram_D           |mem__parameterized0_82 |    20|
+|9     |    \ram_D[5].write_ram_D           |mem__parameterized0_83 |    20|
+|10    |    \ram_D[6].write_ram_D           |mem__parameterized0_84 |    20|
+|11    |    \ram_D[7].write_ram_D           |mem__parameterized0_85 |    20|
+|12    |  s2mm_inst                         |s2mm                   |  1376|
+|13    |    mem_read_A_inst                 |mem_read_A             |    29|
+|14    |    mem_read_B_inst                 |mem_read_B             |    21|
+|15    |    \ram_A[0].read_ram_A            |mem                    |    40|
+|16    |    \ram_A[1].read_ram_A            |mem_64                 |    40|
+|17    |    \ram_A[2].read_ram_A            |mem_65                 |    40|
+|18    |    \ram_A[3].read_ram_A            |mem_66                 |    40|
+|19    |    \ram_A[4].read_ram_A            |mem_67                 |    40|
+|20    |    \ram_A[5].read_ram_A            |mem_68                 |    40|
+|21    |    \ram_A[6].read_ram_A            |mem_69                 |    40|
+|22    |    \ram_A[7].read_ram_A            |mem_70                 |    40|
+|23    |    \ram_B[0].read_ram_B            |mem_71                 |    77|
+|24    |    \ram_B[1].read_ram_B            |mem_72                 |    77|
+|25    |    \ram_B[2].read_ram_B            |mem_73                 |    77|
+|26    |    \ram_B[3].read_ram_B            |mem_74                 |    77|
+|27    |    \ram_B[4].read_ram_B            |mem_75                 |    77|
+|28    |    \ram_B[5].read_ram_B            |mem_76                 |    77|
+|29    |    \ram_B[6].read_ram_B            |mem_77                 |    77|
+|30    |    \ram_B[7].read_ram_B            |mem_78                 |    78|
+|31    |  systolic_inst                     |systolic               | 11663|
+|32    |    control_inst                    |control                |    13|
+|33    |      counter_A                     |counter                |     7|
+|34    |      counter_B                     |counter_63             |     6|
+|35    |    \genblk1[0].genblk1[0].pe_inst  |pe                     |   164|
+|36    |    \genblk1[0].genblk1[1].pe_inst  |pe_0                   |   200|
+|37    |    \genblk1[0].genblk1[2].pe_inst  |pe_1                   |   200|
+|38    |    \genblk1[0].genblk1[3].pe_inst  |pe_2                   |   200|
+|39    |    \genblk1[0].genblk1[4].pe_inst  |pe_3                   |   200|
+|40    |    \genblk1[0].genblk1[5].pe_inst  |pe_4                   |   200|
+|41    |    \genblk1[0].genblk1[6].pe_inst  |pe_5                   |   200|
+|42    |    \genblk1[0].genblk1[7].pe_inst  |pe_6                   |   164|
+|43    |    \genblk1[1].genblk1[0].pe_inst  |pe_7                   |   164|
+|44    |    \genblk1[1].genblk1[1].pe_inst  |pe_8                   |   200|
+|45    |    \genblk1[1].genblk1[2].pe_inst  |pe_9                   |   200|
+|46    |    \genblk1[1].genblk1[3].pe_inst  |pe_10                  |   200|
+|47    |    \genblk1[1].genblk1[4].pe_inst  |pe_11                  |   200|
+|48    |    \genblk1[1].genblk1[5].pe_inst  |pe_12                  |   200|
+|49    |    \genblk1[1].genblk1[6].pe_inst  |pe_13                  |   200|
+|50    |    \genblk1[1].genblk1[7].pe_inst  |pe_14                  |   164|
+|51    |    \genblk1[2].genblk1[0].pe_inst  |pe_15                  |   164|
+|52    |    \genblk1[2].genblk1[1].pe_inst  |pe_16                  |   200|
+|53    |    \genblk1[2].genblk1[2].pe_inst  |pe_17                  |   200|
+|54    |    \genblk1[2].genblk1[3].pe_inst  |pe_18                  |   200|
+|55    |    \genblk1[2].genblk1[4].pe_inst  |pe_19                  |   200|
+|56    |    \genblk1[2].genblk1[5].pe_inst  |pe_20                  |   200|
+|57    |    \genblk1[2].genblk1[6].pe_inst  |pe_21                  |   200|
+|58    |    \genblk1[2].genblk1[7].pe_inst  |pe_22                  |   164|
+|59    |    \genblk1[3].genblk1[0].pe_inst  |pe_23                  |   164|
+|60    |    \genblk1[3].genblk1[1].pe_inst  |pe_24                  |   200|
+|61    |    \genblk1[3].genblk1[2].pe_inst  |pe_25                  |   200|
+|62    |    \genblk1[3].genblk1[3].pe_inst  |pe_26                  |   200|
+|63    |    \genblk1[3].genblk1[4].pe_inst  |pe_27                  |   200|
+|64    |    \genblk1[3].genblk1[5].pe_inst  |pe_28                  |   200|
+|65    |    \genblk1[3].genblk1[6].pe_inst  |pe_29                  |   200|
+|66    |    \genblk1[3].genblk1[7].pe_inst  |pe_30                  |   164|
+|67    |    \genblk1[4].genblk1[0].pe_inst  |pe_31                  |   164|
+|68    |    \genblk1[4].genblk1[1].pe_inst  |pe_32                  |   200|
+|69    |    \genblk1[4].genblk1[2].pe_inst  |pe_33                  |   200|
+|70    |    \genblk1[4].genblk1[3].pe_inst  |pe_34                  |   200|
+|71    |    \genblk1[4].genblk1[4].pe_inst  |pe_35                  |   200|
+|72    |    \genblk1[4].genblk1[5].pe_inst  |pe_36                  |   200|
+|73    |    \genblk1[4].genblk1[6].pe_inst  |pe_37                  |   200|
+|74    |    \genblk1[4].genblk1[7].pe_inst  |pe_38                  |   164|
+|75    |    \genblk1[5].genblk1[0].pe_inst  |pe_39                  |   164|
+|76    |    \genblk1[5].genblk1[1].pe_inst  |pe_40                  |   200|
+|77    |    \genblk1[5].genblk1[2].pe_inst  |pe_41                  |   200|
+|78    |    \genblk1[5].genblk1[3].pe_inst  |pe_42                  |   200|
+|79    |    \genblk1[5].genblk1[4].pe_inst  |pe_43                  |   200|
+|80    |    \genblk1[5].genblk1[5].pe_inst  |pe_44                  |   200|
+|81    |    \genblk1[5].genblk1[6].pe_inst  |pe_45                  |   200|
+|82    |    \genblk1[5].genblk1[7].pe_inst  |pe_46                  |   164|
+|83    |    \genblk1[6].genblk1[0].pe_inst  |pe_47                  |   164|
+|84    |    \genblk1[6].genblk1[1].pe_inst  |pe_48                  |   200|
+|85    |    \genblk1[6].genblk1[2].pe_inst  |pe_49                  |   200|
+|86    |    \genblk1[6].genblk1[3].pe_inst  |pe_50                  |   200|
+|87    |    \genblk1[6].genblk1[4].pe_inst  |pe_51                  |   200|
+|88    |    \genblk1[6].genblk1[5].pe_inst  |pe_52                  |   200|
+|89    |    \genblk1[6].genblk1[6].pe_inst  |pe_53                  |   200|
+|90    |    \genblk1[6].genblk1[7].pe_inst  |pe_54                  |   164|
+|91    |    \genblk1[7].genblk1[0].pe_inst  |pe_55                  |    90|
+|92    |    \genblk1[7].genblk1[1].pe_inst  |pe_56                  |   126|
+|93    |    \genblk1[7].genblk1[2].pe_inst  |pe_57                  |   126|
+|94    |    \genblk1[7].genblk1[3].pe_inst  |pe_58                  |   126|
+|95    |    \genblk1[7].genblk1[4].pe_inst  |pe_59                  |   126|
+|96    |    \genblk1[7].genblk1[5].pe_inst  |pe_60                  |   126|
+|97    |    \genblk1[7].genblk1[6].pe_inst  |pe_61                  |   126|
+|98    |    \genblk1[7].genblk1[7].pe_inst  |pe_62                  |    90|
 +------+------------------------------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1850.844 ; gain = 474.562 ; free physical = 218 ; free virtual = 14418
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:20 ; elapsed = 00:01:27 . Memory (MB): peak = 1849.809 ; gain = 477.531 ; free physical = 2483 ; free virtual = 6544
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 73 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1850.844 ; gain = 91.539 ; free physical = 276 ; free virtual = 14475
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1850.852 ; gain = 474.562 ; free physical = 276 ; free virtual = 14475
+Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 1849.809 ; gain = 86.492 ; free physical = 2542 ; free virtual = 6602
+Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:27 . Memory (MB): peak = 1849.816 ; gain = 477.531 ; free physical = 2542 ; free virtual = 6602
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 260 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 952 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 2 inverter(s) to 28 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1882.859 ; gain = 0.000 ; free physical = 216 ; free virtual = 14415
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 56 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1881.824 ; gain = 0.000 ; free physical = 2480 ; free virtual = 6541
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 28 instances were transformed.
-  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 28 instances
+  A total of 56 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 56 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-150 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+166 Infos, 96 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1882.859 ; gain = 506.656 ; free physical = 268 ; free virtual = 14467
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1882.859 ; gain = 0.000 ; free physical = 268 ; free virtual = 14467
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:33 . Memory (MB): peak = 1881.824 ; gain = 509.625 ; free physical = 2507 ; free virtual = 6567
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1881.824 ; gain = 0.000 ; free physical = 2507 ; free virtual = 6567
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/nachiket/ece327-s22/labs/jlmrocze-lab4/lab4_vivado/lab4.runs/synth_1/mm.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1905.836 ; gain = 24.012 ; free physical = 2506 ; free virtual = 6569
 INFO: [runtcl-4] Executing : report_utilization -file mm_utilization_synth.rpt -pb mm_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jul 19 01:14:11 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 29 18:20:47 2022...
