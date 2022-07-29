@@ -1,8 +1,8 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Mon Jul 25 19:12:47 2022
-// Host        : 9b3282d6ad1d running 64-bit Ubuntu 18.04.5 LTS
+// Date        : Fri Jul 29 16:54:26 2022
+// Host        : 5c15c51ef7f7 running 64-bit Ubuntu 18.04.5 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_auto_us_0/tutorial_auto_us_0_stub.v
 // Design      : tutorial_auto_us_0

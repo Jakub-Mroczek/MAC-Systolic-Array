@@ -1,0 +1,125 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue Jul 19 01:14:40 2022
+| Host         : 5c15c51ef7f7 running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_control_sets -verbose -file mm_control_sets_placed.rpt
+| Design       : mm
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    59 |
+| Unused register locations in slices containing registers |    39 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            4 |
+|      7 |            2 |
+|    16+ |           53 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             173 |           61 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             476 |          163 |
+| Yes          | No                    | No                     |              98 |           23 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             638 |          165 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                             Enable Signal                            |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++--------------+----------------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+| ~mm_fclk     | systolic_inst/genblk1[2].genblk1[3].pe_inst/valid_D[0]               | mm2s_inst/mem_write_D/genblk1[2].wr_addr_bram[2][3]_i_1_n_0 |                1 |              4 |
+| ~mm_fclk     | systolic_inst/genblk1[3].genblk1[3].pe_inst/valid_D[0]               | mm2s_inst/mem_write_D/genblk1[3].wr_addr_bram[3][3]_i_1_n_0 |                1 |              4 |
+| ~mm_fclk     | systolic_inst/genblk1[0].genblk1[3].pe_inst/valid_D[0]               | mm2s_inst/mem_write_D/genblk1[0].wr_addr_bram[0][3]_i_1_n_0 |                1 |              4 |
+| ~mm_fclk     | systolic_inst/genblk1[1].genblk1[3].pe_inst/valid_D[0]               | mm2s_inst/mem_write_D/genblk1[1].wr_addr_bram[1][3]_i_1_n_0 |                1 |              4 |
+| ~mm_clk      | s2mm_inst/write_addr0                                                | s2mm_inst/ram_A[3].read_ram_A/clear                         |                2 |              7 |
+| ~mm_clk      | mm2s_inst/read_addr0                                                 | s2mm_inst/ram_A[3].read_ram_A/clear                         |                2 |              7 |
+| ~mm_fclk     | systolic_inst/genblk1[3].genblk1[1].pe_inst/out_data[15]_i_1__8_n_0  | s2mm_inst/start_multiply_reg_0                              |                5 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_23                                      | s2mm_inst/start_multiply_reg_24                             |                7 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_3                                       | s2mm_inst/start_multiply_reg_4                              |                4 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_5                                       | s2mm_inst/start_multiply_reg_6                              |                4 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_7                                       | s2mm_inst/start_multiply_reg_8                              |                5 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_n_0                                     | s2mm_inst/ram_A[3].read_ram_A/clear                         |                6 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_1                                       | s2mm_inst/start_multiply_reg_2                              |                5 |             16 |
+| ~mm_fclk     | s2mm_inst/mem_read_A_inst/E[0]                                       | s2mm_inst/ram_A[3].read_ram_A/clear                         |                6 |             16 |
+| ~mm_fclk     | systolic_inst/genblk1[0].genblk1[1].pe_inst/out_data[15]_i_1_n_0     | s2mm_inst/start_multiply_reg_0                              |                3 |             16 |
+| ~mm_fclk     | systolic_inst/genblk1[0].genblk1[2].pe_inst/out_data[15]_i_1__0_n_0  | s2mm_inst/start_multiply_reg_0                              |                3 |             16 |
+| ~mm_fclk     | systolic_inst/genblk1[2].genblk1[3].pe_inst/out_data[15]_i_1__7_n_0  | s2mm_inst/start_multiply_reg_0                              |                2 |             16 |
+| ~mm_fclk     | systolic_inst/p_0_in[0]                                              | s2mm_inst/start_multiply_reg_0                              |                6 |             16 |
+| ~mm_fclk     | systolic_inst/genblk1[2].genblk1[2].pe_inst/out_data[15]_i_1__6_n_0  | s2mm_inst/start_multiply_reg_0                              |                3 |             16 |
+| ~mm_fclk     | systolic_inst/genblk1[3].genblk1[2].pe_inst/out_data[15]_i_1__9_n_0  | s2mm_inst/start_multiply_reg_0                              |                4 |             16 |
+| ~mm_fclk     | systolic_inst/genblk1[3].genblk1[3].pe_inst/out_data[15]_i_1__10_n_0 | s2mm_inst/start_multiply_reg_0                              |                3 |             16 |
+| ~mm_fclk     | systolic_inst/p_2_in                                                 | s2mm_inst/start_multiply_reg_0                              |                7 |             16 |
+| ~mm_fclk     | systolic_inst/genblk1[0].genblk1[3].pe_inst/out_data[15]_i_1__1_n_0  | s2mm_inst/start_multiply_reg_0                              |                4 |             16 |
+| ~mm_fclk     | systolic_inst/p_1_in                                                 | s2mm_inst/start_multiply_reg_0                              |                4 |             16 |
+| ~mm_fclk     | systolic_inst/genblk1[1].genblk1[1].pe_inst/out_data[15]_i_1__2_n_0  | s2mm_inst/start_multiply_reg_0                              |                4 |             16 |
+| ~mm_fclk     | systolic_inst/genblk1[1].genblk1[2].pe_inst/out_data[15]_i_1__3_n_0  | s2mm_inst/start_multiply_reg_0                              |                3 |             16 |
+| ~mm_fclk     | systolic_inst/genblk1[1].genblk1[3].pe_inst/out_data[15]_i_1__4_n_0  | s2mm_inst/start_multiply_reg_0                              |                3 |             16 |
+| ~mm_fclk     | systolic_inst/init_pe_r_reg[0][3]_0                                  | s2mm_inst/start_multiply_reg_0                              |                7 |             16 |
+| ~mm_fclk     | systolic_inst/genblk1[2].genblk1[1].pe_inst/out_data[15]_i_1__5_n_0  | s2mm_inst/start_multiply_reg_0                              |                3 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_15                                      | s2mm_inst/start_multiply_reg_16                             |                3 |             16 |
+| ~mm_clk      | mm2s_inst/ram_D[0].write_ram_D/p_19_out                              | s2mm_inst/ram_A[3].read_ram_A/clear                         |                3 |             16 |
+| ~mm_clk      | s2mm_inst/ram_A[1].read_ram_A/p_0_in__4                              |                                                             |                2 |             16 |
+| ~mm_clk      | s2mm_inst/ram_A[2].read_ram_A/p_0_in__5                              |                                                             |                2 |             16 |
+| ~mm_clk      | s2mm_inst/ram_B[0].read_ram_B/p_0_in                                 |                                                             |                2 |             16 |
+| ~mm_clk      | s2mm_inst/ram_B[1].read_ram_B/p_0_in__1                              |                                                             |                2 |             16 |
+| ~mm_clk      | s2mm_inst/ram_B[2].read_ram_B/p_0_in__2                              |                                                             |                2 |             16 |
+| ~mm_clk      | mm2s_inst/ram_D[3].write_ram_D/p_5_out                               | s2mm_inst/ram_A[3].read_ram_A/clear                         |                2 |             16 |
+| ~mm_clk      | s2mm_inst/ram_B[3].read_ram_B/p_0_in__3                              |                                                             |                2 |             16 |
+| ~mm_clk      | s2mm_inst/ram_A[0].read_ram_A/p_0_in__0__0                           |                                                             |                2 |             16 |
+| ~mm_clk      | s2mm_inst/ram_A[3].read_ram_A/p_0_in__6                              |                                                             |                2 |             16 |
+| ~mm_clk      | mm2s_inst/ram_D[1].write_ram_D/p_17_out                              | s2mm_inst/ram_A[3].read_ram_A/clear                         |                3 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_17                                      | s2mm_inst/start_multiply_reg_18                             |                3 |             16 |
+| ~mm_clk      | mm2s_inst/ram_D[2].write_ram_D/p_11_out                              | s2mm_inst/ram_A[3].read_ram_A/clear                         |                2 |             16 |
+| ~mm_fclk     | s2mm_inst/mem_read_A_inst/genblk1[3].rd_en_bram_reg_reg[3]_0[0]      | s2mm_inst/ram_A[3].read_ram_A/clear                         |                5 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_19                                      | s2mm_inst/start_multiply_reg_20                             |                4 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_21                                      | s2mm_inst/start_multiply_reg_22                             |                7 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_9                                       | s2mm_inst/start_multiply_reg_10                             |                3 |             16 |
+| ~mm_fclk     | s2mm_inst/mem_read_A_inst/genblk1[2].rd_en_bram_reg_reg[2]_0[0]      | s2mm_inst/ram_A[3].read_ram_A/clear                         |                6 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_11                                      | s2mm_inst/start_multiply_reg_12                             |                4 |             16 |
+| ~mm_fclk     | s2mm_inst/start_multiply_reg_13                                      | s2mm_inst/start_multiply_reg_14                             |                3 |             16 |
+| ~mm_fclk     | mm2s_inst/ram_D[2].write_ram_D/wr_en_D_bram[2]                       |                                                             |                3 |             24 |
+| ~mm_fclk     | mm2s_inst/ram_D[3].write_ram_D/wr_en_D_bram[3]                       |                                                             |                3 |             24 |
+| ~mm_fclk     | mm2s_inst/ram_D[1].write_ram_D/wr_en_D_bram[1]                       |                                                             |                3 |             24 |
+| ~mm_fclk     | mm2s_inst/ram_D[0].write_ram_D/wr_en_D_bram[0]                       |                                                             |                3 |             24 |
+| ~mm_fclk     | systolic_inst/control_inst/counter_A/patch                           | systolic_inst/control_inst/counter_A/enable_row_count_A_reg |                8 |             32 |
+| ~mm_fclk     |                                                                      |                                                             |               24 |             42 |
+| ~mm_clk      | m_axis_mm2s_tready                                                   |                                                             |               23 |             98 |
+| ~mm_clk      |                                                                      |                                                             |               37 |            131 |
+| ~mm_fclk     |                                                                      | s2mm_inst/start_multiply_reg_0                              |              163 |            476 |
++--------------+----------------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+
+
