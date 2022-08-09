@@ -14,12 +14,12 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19823 
+INFO: Helper process launched with PID 498393 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1383.656 ; gain = 54.922 ; free physical = 457 ; free virtual = 4596
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1384.203 ; gain = 2.922 ; free physical = 1581 ; free virtual = 39927
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'tutorial_s01_mmu_0' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_s01_mmu_0/synth/tutorial_s01_mmu_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_16_top' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:557]
+INFO: [Synth 8-6157] synthesizing module 'tutorial_s01_mmu_0' [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_s01_mmu_0/synth/tutorial_s01_mmu_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_16_top' [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:557]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -55,7 +55,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_16_top' [/home/nachiket/e
 	Parameter R_IDLE bound to: 2'b00 
 	Parameter R_PENDING bound to: 2'b01 
 	Parameter R_DECERR bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_16_addr_decoder' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_16_addr_decoder' [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:63]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_RANGES bound to: 2 - type: integer 
 	Parameter C_NUM_RANGES_LOG bound to: 1 - type: integer 
@@ -63,8 +63,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_16_addr_decoder' [/home/n
 	Parameter C_BASE_ADDR bound to: 128'b00000000000000000000000000000000111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_RANGE_SIZE bound to: 64'b0000000000000000000000000001100000000000000000000000000000011101 
 	Parameter C_RANGE_QUAL bound to: 3'b011 
-INFO: [Synth 8-6155] done synthesizing module 'axi_mmu_v2_1_16_addr_decoder' (1#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:63]
-INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_16_decerr_slave' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:201]
+INFO: [Synth 8-6155] done synthesizing module 'axi_mmu_v2_1_16_addr_decoder' (1#1) [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_16_decerr_slave' [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:201]
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
@@ -81,9 +81,9 @@ INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_16_decerr_slave' [/home/n
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:362]
-INFO: [Synth 8-6155] done synthesizing module 'axi_mmu_v2_1_16_decerr_slave' (2#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:201]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axi_register_slice' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:2637]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:362]
+INFO: [Synth 8-6155] done synthesizing module 'axi_mmu_v2_1_16_decerr_slave' (2#1) [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:201]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axi_register_slice' [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:2637]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -194,32 +194,32 @@ INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axi_registe
 	Parameter G_AXI_RUSER_INDEX bound to: 36 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 63 - type: integer 
 	Parameter C_REG_CONFIG bound to: 7 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' (3#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized0' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' (3#1) [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized0' [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 37 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized0' (3#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized1' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized0' (3#1) [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized1' [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized1' (3#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized2' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized1' (3#1) [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized2' [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 63 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized2' (3#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized3' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized2' (3#1) [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized3' [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized3' (3#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice__parameterized3' (3#1) [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 33 - type: integer 
@@ -311,8 +311,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' 
 	Parameter G_AXI_RUSER_INDEX bound to: 36 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (4#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (4#1) [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
 	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 33 - type: integer 
@@ -404,11 +404,11 @@ INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' 
 	Parameter G_AXI_RUSER_INDEX bound to: 36 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (5#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axi_register_slice' (6#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:2637]
-WARNING: [Synth 8-350] instance 'register_slice_inst' of module 'axi_register_slice_v2_1_18_axi_register_slice' requires 93 connections, but only 92 given [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:1172]
-INFO: [Synth 8-6155] done synthesizing module 'axi_mmu_v2_1_16_top' (7#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:557]
-INFO: [Synth 8-6155] done synthesizing module 'tutorial_s01_mmu_0' (8#1) [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_s01_mmu_0/synth/tutorial_s01_mmu_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (5#1) [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axi_register_slice' (6#1) [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:2637]
+WARNING: [Synth 8-350] instance 'register_slice_inst' of module 'axi_register_slice_v2_1_18_axi_register_slice' requires 93 connections, but only 92 given [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:1172]
+INFO: [Synth 8-6155] done synthesizing module 'axi_mmu_v2_1_16_top' (7#1) [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:557]
+INFO: [Synth 8-6155] done synthesizing module 'tutorial_s01_mmu_0' (8#1) [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_s01_mmu_0/synth/tutorial_s01_mmu_0.v:58]
 WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_buser[0]
 WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_ruser[0]
 WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awuser[0]
@@ -511,7 +511,7 @@ WARNING: [Synth 8-3331] design axi_mmu_v2_1_16_top has unconnected port s_axi_ar
 WARNING: [Synth 8-3331] design axi_mmu_v2_1_16_top has unconnected port s_axi_arcache[1]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1429.406 ; gain = 100.672 ; free physical = 448 ; free virtual = 4588
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1429.953 ; gain = 48.672 ; free physical = 1537 ; free virtual = 39883
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -524,48 +524,48 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1429.406 ; gain = 100.672 ; free physical = 465 ; free virtual = 4607
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1429.953 ; gain = 48.672 ; free physical = 1533 ; free virtual = 39880
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1429.406 ; gain = 100.672 ; free physical = 465 ; free virtual = 4607
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1429.953 ; gain = 48.672 ; free physical = 1533 ; free virtual = 39880
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_s01_mmu_0/tutorial_s01_mmu_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_s01_mmu_0/tutorial_s01_mmu_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.runs/tutorial_s01_mmu_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.runs/tutorial_s01_mmu_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_s01_mmu_0/tutorial_s01_mmu_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_s01_mmu_0/tutorial_s01_mmu_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.runs/tutorial_s01_mmu_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.runs/tutorial_s01_mmu_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1773.414 ; gain = 0.000 ; free physical = 114 ; free virtual = 4283
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1772.953 ; gain = 0.000 ; free physical = 1099 ; free virtual = 39446
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1773.414 ; gain = 0.000 ; free physical = 113 ; free virtual = 4282
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1773.414 ; gain = 0.000 ; free physical = 112 ; free virtual = 4281
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1772.953 ; gain = 0.000 ; free physical = 1098 ; free virtual = 39445
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1772.953 ; gain = 0.000 ; free physical = 1094 ; free virtual = 39441
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 183 ; free virtual = 4353
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 1059 ; free virtual = 39406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 183 ; free virtual = 4353
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 1059 ; free virtual = 39406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.runs/tutorial_s01_mmu_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.runs/tutorial_s01_mmu_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 185 ; free virtual = 4355
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 1061 ; free virtual = 39408
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'axi_mmu_v2_1_16_decerr_slave'
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:924]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:918]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:924]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/e3c9/hdl/axi_mmu_v2_1_vl_rfs.v:918]
 INFO: [Synth 8-802] inferred FSM for state register 'gen_write.w_state_reg' in module 'axi_mmu_v2_1_16_top'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -585,7 +585,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_write.w_state_reg' using encoding 'one-hot' in module 'axi_mmu_v2_1_16_top'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 131 ; free virtual = 4302
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 1045 ; free virtual = 39393
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -667,12 +667,12 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3936] Found unconnected internal register 'register_slice_inst/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '63' to '59' bits. [/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:1008]
+INFO: [Synth 8-3936] Found unconnected internal register 'register_slice_inst/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '63' to '59' bits. [/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:1008]
 INFO: [Synth 8-3886] merging instance 'inst/aresetn_d_reg[0]' (FDR) to 'inst/register_slice_inst/aw.aw_pipe/aresetn_d_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/aresetn_d_reg[1]' (FDR) to 'inst/register_slice_inst/aw.aw_pipe/aresetn_d_reg[1]'
 INFO: [Synth 8-3332] Sequential element (FSM_onehot_gen_write.w_state_reg[0]) is unused and will be removed from module axi_mmu_v2_1_16_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 275 ; free virtual = 4395
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 1014 ; free virtual = 39363
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -684,13 +684,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 972 ; free virtual = 5078
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 761 ; free virtual = 39113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 968 ; free virtual = 5075
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 759 ; free virtual = 39111
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -702,7 +702,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 960 ; free virtual = 5067
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 758 ; free virtual = 39110
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -726,7 +726,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 932 ; free virtual = 5040
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 737 ; free virtual = 39089
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -739,7 +739,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 932 ; free virtual = 5040
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 737 ; free virtual = 39089
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -751,25 +751,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 932 ; free virtual = 5039
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 736 ; free virtual = 39088
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 932 ; free virtual = 5039
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 736 ; free virtual = 39088
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 932 ; free virtual = 5039
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 736 ; free virtual = 39087
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 932 ; free virtual = 5039
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 736 ; free virtual = 39088
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -806,33 +806,33 @@ Report Instance Areas:
 |5     |      \aw.aw_pipe       |axi_register_slice_v2_1_18_axic_register_slice |    85|
 +------+------------------------+-----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1773.414 ; gain = 444.680 ; free physical = 932 ; free virtual = 5039
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.953 ; gain = 391.672 ; free physical = 736 ; free virtual = 39088
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 103 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1773.414 ; gain = 100.672 ; free physical = 987 ; free virtual = 5095
-Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1773.422 ; gain = 444.680 ; free physical = 987 ; free virtual = 5094
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1772.953 ; gain = 48.672 ; free physical = 789 ; free virtual = 39141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.961 ; gain = 391.672 ; free physical = 789 ; free virtual = 39141
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1773.422 ; gain = 0.000 ; free physical = 805 ; free virtual = 4933
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1772.961 ; gain = 0.000 ; free physical = 701 ; free virtual = 39053
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 45 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 1773.422 ; gain = 444.766 ; free physical = 837 ; free virtual = 4968
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1772.961 ; gain = 391.758 ; free physical = 752 ; free virtual = 39104
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1773.422 ; gain = 0.000 ; free physical = 837 ; free virtual = 4968
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1772.961 ; gain = 0.000 ; free physical = 752 ; free virtual = 39104
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.runs/tutorial_s01_mmu_0_synth_1/tutorial_s01_mmu_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.runs/tutorial_s01_mmu_0_synth_1/tutorial_s01_mmu_0.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP tutorial_s01_mmu_0, cache-ID = 8bb5dee704613708
 INFO: [Coretcl 2-1174] Renamed 4 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1797.426 ; gain = 0.000 ; free physical = 795 ; free virtual = 4952
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.965 ; gain = 0.000 ; free physical = 731 ; free virtual = 39083
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.runs/tutorial_s01_mmu_0_synth_1/tutorial_s01_mmu_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.runs/tutorial_s01_mmu_0_synth_1/tutorial_s01_mmu_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file tutorial_s01_mmu_0_utilization_synth.rpt -pb tutorial_s01_mmu_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jul 29 19:08:46 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug  9 13:40:14 2022...

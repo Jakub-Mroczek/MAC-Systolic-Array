@@ -489,6 +489,12 @@
           }
         },
         "interface_nets": {
+          "m00_couplers_to_axi_mem_intercon": {
+            "interface_ports": [
+              "M00_AXI",
+              "m00_couplers/M_AXI"
+            ]
+          },
           "s01_mmu_M_AXI": {
             "interface_ports": [
               "s01_mmu/M_AXI",
@@ -511,12 +517,6 @@
             "interface_ports": [
               "s00_mmu/M_AXI",
               "s00_couplers/S_AXI"
-            ]
-          },
-          "m00_couplers_to_axi_mem_intercon": {
-            "interface_ports": [
-              "M00_AXI",
-              "m00_couplers/M_AXI"
             ]
           },
           "xbar_to_m00_couplers": {
@@ -634,13 +634,13 @@
             "xci_name": "tutorial_mm_0_0",
             "parameters": {
               "M": {
-                "value": "15"
+                "value": "8"
               },
               "N1": {
-                "value": "15"
+                "value": "4"
               },
               "N2": {
-                "value": "15"
+                "value": "4"
               }
             },
             "reference_info": {

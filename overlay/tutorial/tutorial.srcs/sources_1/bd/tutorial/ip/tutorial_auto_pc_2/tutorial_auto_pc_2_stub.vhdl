@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Fri Jul 29 19:05:05 2022
--- Host        : 9b3282d6ad1d running 64-bit Ubuntu 18.04.5 LTS
+-- Date        : Tue Aug  9 13:39:55 2022
+-- Host        : f763bbc2df5e running 64-bit Ubuntu 18.04.5 LTS
 -- Command     : write_vhdl -force -mode synth_stub
---               /home/nachiket/ece327-s22/labs/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_auto_pc_2/tutorial_auto_pc_2_stub.vhdl
+--               /home/nachiket/lab4/jlmrocze-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_auto_pc_2/tutorial_auto_pc_2_stub.vhdl
 -- Design      : tutorial_auto_pc_2
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
