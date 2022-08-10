@@ -634,13 +634,13 @@
             "xci_name": "tutorial_mm_0_0",
             "parameters": {
               "M": {
-                "value": "8"
+                "value": "15"
               },
               "N1": {
-                "value": "4"
+                "value": "15"
               },
               "N2": {
-                "value": "4"
+                "value": "15"
               }
             },
             "reference_info": {
@@ -3102,6 +3102,12 @@
           "processing_system7_0/DDR"
         ]
       },
+      "axi_dma_0_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_mem_intercon/S01_AXI",
+          "mm_eval/M_AXI_S2MM"
+        ]
+      },
       "axi_mem_intercon_M00_AXI": {
         "interface_ports": [
           "axi_mem_intercon/M00_AXI",
@@ -3112,12 +3118,6 @@
         "interface_ports": [
           "axi_mem_intercon/S00_AXI",
           "mm_eval/M_AXI_MM2S"
-        ]
-      },
-      "axi_dma_0_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_mem_intercon/S01_AXI",
-          "mm_eval/M_AXI_S2MM"
         ]
       }
     },

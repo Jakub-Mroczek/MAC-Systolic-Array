@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Aug  9 13:38:08 2022" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Aug  9 21:26:11 2022" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="tutorial" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -2413,9 +2413,9 @@
     <MODULE COREREVISION="1" FULLNAME="/mm_eval/mm_0" HWVERSION="1.0" INSTANCE="mm_eval_mm_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mm_axi" VLNV="xilinx.com:module_ref:mm_axi:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="M" VALUE="8"/>
-        <PARAMETER NAME="N1" VALUE="4"/>
-        <PARAMETER NAME="N2" VALUE="4"/>
+        <PARAMETER NAME="M" VALUE="15"/>
+        <PARAMETER NAME="N1" VALUE="15"/>
+        <PARAMETER NAME="N2" VALUE="15"/>
         <PARAMETER NAME="Component_Name" VALUE="tutorial_mm_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
