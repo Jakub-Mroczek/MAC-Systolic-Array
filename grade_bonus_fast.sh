@@ -22,7 +22,7 @@ score=`echo "sqrt(${N1} * ${N2}) * $ftargetb" | bc`
 positiveslack=`echo "$slackb + 0.075 > 0" | bc -l`
 
 # TODO: replace 3834 with the largest score in that term
-if [[ $boardb > 0 && $positiveslack > 0 ]]; then boardb=`echo "15 + 15*($score-400)/(3834-400)" | bc`; else boardb=0; fi
+if [[ $boardb > 0 && $positiveslack > 0 ]]; then boardb=`echo "15 + 15*($score-400)/(2532-400)" | bc`; else boardb=0; fi
 
 board=`expr $boardb`
 echo "$board," > grade_c.csv
